@@ -1,0 +1,1067 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table with Search</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+</head>
+<body>
+
+    
+
+    <table id="dataTable">
+      <thead><tr class="tableizer-firstrow"><th>NO</th><th>KBLI 3 Digit</th><th>KBLI 4 Digit</th><th>KBLI 5 Digit</th><th>Jenis Kegiatan</th><th>R-4</th></tr></thead><tbody>
+ <tr><td>&nbsp;</td><td>Pertanian, Kehutanan, dan Perikanan</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>1</td><td>011</td><td>0111</td><td>01111</td><td>Pertanian Jagung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>2</td><td>011</td><td>0111</td><td>01112</td><td>Pertanian Gandum</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>3</td><td>011</td><td>0111</td><td>01113</td><td>Pertanian Kedelai</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>4</td><td>011</td><td>0111</td><td>01114</td><td>Pertanian Kacang Tanah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>5</td><td>011</td><td>0111</td><td>01115</td><td>Pertanian Kacang Hijau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>6</td><td>011</td><td>0111</td><td>01116</td><td>Pertanian Aneka Kacang Hortikultura</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>7</td><td>011</td><td>0111</td><td>01117</td><td>Pertanian Biji-bijian Penghasil Minyak Makan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>8</td><td>011</td><td>0111</td><td>01118</td><td>Pertanian Biji-bijian Penghasil Bukan Minyak Makan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>9</td><td>011</td><td>0111</td><td>01119</td><td>Pertanian Serealia Lainnya, Aneka Kacang dan Biji-Bijian Penghasil Minyak Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>10</td><td>011</td><td>0112</td><td>01121</td><td>Pertanian Padi Hibrida</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>11</td><td>011</td><td>0112</td><td>01122</td><td>Pertanian Padi Inbrida</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>12</td><td>011</td><td>0113</td><td>01131</td><td>Pertanian Hortikultura Sayuran Daun</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>13</td><td>011</td><td>0113</td><td>01132</td><td>Pertanian Hortikultura Buah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>14</td><td>011</td><td>0113</td><td>01133</td><td>Pertanian Hortikultura Sayuran Buah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>15</td><td>011</td><td>0113</td><td>01134</td><td>Pertanian Hortikultura Sayuran Umbi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>16</td><td>011</td><td>0113</td><td>01135</td><td>Pertanian Aneka Umbi Palawija</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>17</td><td>011</td><td>0113</td><td>01136</td><td>Pertanian Jamur</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>18</td><td>011</td><td>0113</td><td>01137</td><td>Pertanian Bit Gula Dan Tanaman Pemanis Bukan Tebu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>19</td><td>011</td><td>0113</td><td>01139</td><td>Pertanian Sayuran, Buah dan Aneka Umbi Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>20</td><td>011</td><td>0114</td><td>01140</td><td>Perkebunan Tebu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>21</td><td>011</td><td>0115</td><td>01150</td><td>Perkebunan Tembakau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>22</td><td>011</td><td>0116</td><td>01160</td><td>Pertanian Tanaman Berserat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>23</td><td>011</td><td>0119</td><td>01191</td><td>Pertanian Tanaman Pakan Ternak</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>24</td><td>011</td><td>0119</td><td>01192</td><td>Perbenihan Tanaman Pakan Ternak dan Pembibitan Bit (Bukan Bit Gula)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>25</td><td>011</td><td>0119</td><td>01193</td><td>Pertanian Tanaman Bunga</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>26</td><td>011</td><td>0119</td><td>01194</td><td>Pertanian Pembibitan Tanaman Bunga</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>27</td><td>011</td><td>0119</td><td>01199</td><td>Pertanian tanaman semusim lainnya ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>28</td><td>012</td><td>0121</td><td>01210</td><td>Pertanian Buah Anggur</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>29</td><td>012</td><td>0122</td><td>01220</td><td>Pertanian Buah-Buahan Tropis dan Subtropis</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>30</td><td>012</td><td>0123</td><td>01230</td><td>Pertanian Buah Jeruk</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>31</td><td>012</td><td>0124</td><td>01240</td><td>Pertanian Buah Apel dan Buah Batu (Pome and Stone Fruits)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>32</td><td>012</td><td>0125</td><td>01251</td><td>Pertanian Buah Beri</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>33</td><td>012</td><td>0125</td><td>01252</td><td>Pertanian Buah Biji Kacang-Kacangan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>34</td><td>012</td><td>0125</td><td>01253</td><td>Pertanian Sayuran Tahunan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>35</td><td>012</td><td>0125</td><td>01259</td><td>Pertanian Buah Semak Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>36</td><td>012</td><td>0126</td><td>01261</td><td>Perkebunan Buah Kelapa</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>37</td><td>012</td><td>0127</td><td>01262</td><td>Perkebunan Buah Kelapa Sawit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>38</td><td>012</td><td>0128</td><td>01269</td><td>Perkebunan Oleaginous Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>39</td><td>012</td><td>0127</td><td>01270</td><td>Pertanian Tanaman Untuk Bahan Minuman</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>40</td><td>012</td><td>0127</td><td>01281</td><td>Perkebunan Lada</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>41</td><td>012</td><td>0127</td><td>01282</td><td>Perkebunana Cengkeh</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>42</td><td>012</td><td>0128</td><td>01283</td><td>Pertanian Cabai</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>43</td><td>012</td><td>0128</td><td>01284</td><td>Perkebunan Tanaman Aromatik/Penyegar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>44</td><td>012</td><td>0128</td><td>01285</td><td>Pertanian Tanaman Obat atau Biofarmaka Rimpang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>45</td><td>012</td><td>0128</td><td>01286</td><td>Pertanian Tanaman Obat atau Biofarmaka Non Rimpang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>46</td><td>012</td><td>0128</td><td>01287</td><td>Pertanian Tanaman Narkotika dan Tanaman Obat Terlarang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>47</td><td>012</td><td>0128</td><td>01289</td><td>Pertanian Tanaman Rempah-Rempah, Aromatik/Penyegar, dan Obat Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>48</td><td>012</td><td>0129</td><td>01291</td><td>Perkebunana Karet dan Tanaman Penghasil Getah Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>49</td><td>012</td><td>0129</td><td>01299</td><td>Pertanian Cemara dan Tanaman Tahunan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>50</td><td>013</td><td>0130</td><td>01301</td><td>Pertanian Tanaman Hias</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>51</td><td>013</td><td>0130</td><td>01302</td><td>Pertanian Pengembangbiakan Tanaman</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>52</td><td>014</td><td>0141</td><td>01411</td><td>Pembibitan Dan Budidaya Sapi Potong</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>53</td><td>014</td><td>0141</td><td>01412</td><td>Pembibitan Dan Budidaya Sapi Perah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>54</td><td>014</td><td>0141</td><td>01413</td><td>Pembibitan Dan Budidaya Kerbau Potong</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>55</td><td>014</td><td>0141</td><td>01414</td><td>Pembibitan Dan Budidaya Kerbau Perah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>56</td><td>014</td><td>0142</td><td>01420</td><td>Peternakan Kuda dan Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>57</td><td>014</td><td>0143</td><td>01430</td><td>Peternakan unta dan sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>58</td><td>014</td><td>0144</td><td>01441</td><td>Pembibitan Dan Budidaya Domba Potong</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>59</td><td>014</td><td>0144</td><td>01442</td><td>Pembibitan Dan Budidaya Kambing Potong</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>60</td><td>014</td><td>0144</td><td>01443</td><td>Pembibitan Dan Budidaya Kambing Perah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>61</td><td>014</td><td>0144</td><td>01444</td><td>Pembibitan Dan Budidaya Domba Perah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>62</td><td>014</td><td>0144</td><td>01445</td><td>Produksi Bulu Domba Mentah/Raw Wool</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>63</td><td>014</td><td>0145</td><td>01450</td><td>Peternakan Babi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>64</td><td>014</td><td>0146</td><td>01461</td><td>Budidaya Ayam Ras Pedaging</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>65</td><td>014</td><td>0146</td><td>01462</td><td>Budidaya Ayam Ras Petelur</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>66</td><td>014</td><td>0146</td><td>01463</td><td>Pembibitan Ayam Lokal dan Persilangannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>67</td><td>014</td><td>0146</td><td>01464</td><td>Budidaya Ayam Lokal dan Persilangannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>68</td><td>014</td><td>0146</td><td>01465</td><td>Pembibitan dan Budidaya Itik dan/atau Bebek</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>69</td><td>014</td><td>0146</td><td>01466</td><td>Pembibitan Dan Budidaya Burung Puyuh</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>70</td><td>014</td><td>0146</td><td>01467</td><td>Pembibitan Dan Budidaya Burung Merpati</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>71</td><td>014</td><td>0146</td><td>01468</td><td>Pembibitan Ayam Ras</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>72</td><td>014</td><td>0146</td><td>01469</td><td>Pembibitan Dan Budidaya Ternak Unggas Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>73</td><td>014</td><td>0149</td><td>01491</td><td>Pembibitan Dan Budidaya Burung Unta</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>74</td><td>014</td><td>0149</td><td>01492</td><td>Pengusahaan Kokon/Kepompong Ulat Sutera</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>75</td><td>014</td><td>0149</td><td>01493</td><td>Pembibitan Dan Budidaya Lebah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>76</td><td>014</td><td>0149</td><td>01494</td><td>Pembibitan Dan Budidaya Rusa</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>77</td><td>014</td><td>0149</td><td>01495</td><td>Pembibitan Dan Budidaya Kelinci</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>78</td><td>014</td><td>0149</td><td>01496</td><td>Pembibitan Dan Budidaya Cacing</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>79</td><td>014</td><td>0149</td><td>01497</td><td>Pembibitan dan Budidaya Burung Walet</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>80</td><td>014</td><td>0149</td><td>01499</td><td>Pembibitan Dan Budidaya Aneka Ternak Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>81</td><td>016</td><td>0161</td><td>01611</td><td>Jasa Pengolahan Lahan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>82</td><td>016</td><td>0161</td><td>01612</td><td>Jasa Pemupukan, Penanaman Bibit/Benih Dan Pengendalian Hama dan Gulma</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>83</td><td>016</td><td>0161</td><td>01613</td><td>Jasa Pemanenan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>84</td><td>016</td><td>0161</td><td>01614</td><td>Jasa Penyemprotan Dan Penyerbukan Melalui Udara</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>85</td><td>016</td><td>0161</td><td>01619</td><td>Jasa Penunjang Pertanian Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>86</td><td>016</td><td>0162</td><td>01621</td><td>Jasa Pelayanan Kesehatan Ternak</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>87</td><td>016</td><td>0162</td><td>01622</td><td>Jasa Perkawinan Ternak</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>88</td><td>016</td><td>0162</td><td>01623</td><td>Jasa Penetasan Telur</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>89</td><td>016</td><td>0162</td><td>01629</td><td>Jasa Penunjang Peternakan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>90</td><td>016</td><td>0163</td><td>01630</td><td>Jasa Pasca Panen</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>91</td><td>016</td><td>0164</td><td>01640</td><td>Pemilihan benih tanaman untuk pengembangbiakan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>92</td><td>017</td><td>0171</td><td>01711</td><td>Perburuan dan Penangkapan Primata</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>93</td><td>017</td><td>0171</td><td>01712</td><td>Perburuan dan Penangkapan Mamalia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>94</td><td>017</td><td>0171</td><td>01713</td><td>Perburuan dan Penangkapan Reptil</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>95</td><td>017</td><td>0171</td><td>01714</td><td>Perburuan dan Penangkapan Burung</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>96</td><td>017</td><td>0171</td><td>01715</td><td>Perburuan dan Penangkapan Insekta</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>97</td><td>017</td><td>0171</td><td>01719</td><td>Perburuan dan Penangkapan Satwa Liar Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>98</td><td>017</td><td>0171</td><td>01721</td><td>Penangkaran Primata</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>99</td><td>017</td><td>0171</td><td>01722</td><td>Penangkaran Mamalia</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>100</td><td>017</td><td>0171</td><td>01723</td><td>Penangkaran Reptil</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>101</td><td>017</td><td>0172</td><td>01724</td><td>Penangkaran Burung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>102</td><td>017</td><td>0172</td><td>01725</td><td>Penangkaran Insekta</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>103</td><td>017</td><td>0172</td><td>01726</td><td>Penangkaran Anggrek</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>104</td><td>017</td><td>0172</td><td>01727</td><td>Penangkaran Ikan dan Coral/karang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>105</td><td>017</td><td>0172</td><td>01729</td><td>Penangkaran Tumbuhan/Satwa Liar Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>106</td><td>021</td><td>0211</td><td>02111</td><td>Pemanfaatan Kayu Hutan Tanaman pada Hutan Produksi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>107</td><td>021</td><td>0211</td><td>02112</td><td>Pemanfaatan kayu hutan tanaman hasil rehabilitasi pada hutan produksi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>108</td><td>021</td><td>0211</td><td>02113</td><td>Pemanfaatan kayu hutan tanaman rakyat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>109</td><td>021</td><td>0211</td><td>02119</td><td>Pemanfaatan kayu hutan tanaman lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>110</td><td>021</td><td>0212</td><td>02121</td><td>Pemanfaatan Kayu Hutan Alam</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>111</td><td>021</td><td>0212</td><td>02122</td><td>Pemanfaatan kayu hasil restorasi ekosistem pada hutan alam</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>112</td><td>021</td><td>0213</td><td>02130</td><td>Pemanfaatan Hasil Hutan Bukan Kayu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>113</td><td>021</td><td>0214</td><td>02140</td><td>Pengusahaan Perbenihan Tanaman Kehutanan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>114</td><td>022</td><td>0220</td><td>02201</td><td>Pemanenan kayu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>115</td><td>022</td><td>0220</td><td>02202</td><td>Usaha Pemungutan Kayu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>116</td><td>022</td><td>0220</td><td>02209</td><td>Usaha Kehutanan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>117</td><td>023</td><td>0230</td><td>02301</td><td>Pemungutan Getah Karet</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>118</td><td>023</td><td>0230</td><td>02302</td><td>Pemungutan Rotan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>119</td><td>023</td><td>0230</td><td>02303</td><td>Pemungutan Getah Pinus</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>120</td><td>023</td><td>0230</td><td>02304</td><td>Pemungutan Daun Kayu Putih</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>121</td><td>023</td><td>0230</td><td>02305</td><td>Pemungutan Kokon/Kepompong Ulat Sutera</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>122</td><td>023</td><td>0230</td><td>02306</td><td>Pemungutan Damar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>123</td><td>023</td><td>0230</td><td>02307</td><td>Pemungutan Madu</td><td>Diizinkan</td></tr>
+ <tr><td>124</td><td>023</td><td>0230</td><td>02308</td><td>Pemungutan Bambu</td><td>Diizinkan</td></tr>
+ <tr><td>125</td><td>023</td><td>0230</td><td>02309</td><td>Pemungutan Bukan Kayu Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>126</td><td>024</td><td>0240</td><td>02401</td><td>Jasa Penggunaan Kawasan Hutan Di Luar Sektor Kehutanan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>127</td><td>024</td><td>0240</td><td>02402</td><td>Jasa Perlindungan Hutan Dan Konservasi Alam</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>128</td><td>024</td><td>0240</td><td>02403</td><td>Jasa Rehabilitasi Dan Restorasi Kehutanan Sosial</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>129</td><td>024</td><td>0240</td><td>02404</td><td>Jasa Kehutanan Bidang Perencanaan Kehutanan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>130</td><td>024</td><td>0240</td><td>02409</td><td>Jasa Penunjang Kehutanan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>131</td><td>031</td><td>0311</td><td>03111</td><td>Penangkapan Pisces/Ikan Bersirip Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>132</td><td>031</td><td>0311</td><td>03112</td><td>Penangkapan Crustacea Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>133</td><td>031</td><td>0311</td><td>03113</td><td>Penangkapan Mollusca Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>134</td><td>031</td><td>0311</td><td>03114</td><td>Penangkapan/Pengambilan Tumbuhan Air Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>135</td><td>031</td><td>0311</td><td>03115</td><td>Penangkapan/Pengambilan Induk/Benih Ikan Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>136</td><td>031</td><td>0311</td><td>03116</td><td>Penangkapan Echinodermata Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>137</td><td>031</td><td>0311</td><td>03117</td><td>Penangkapan Coelenterata Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>138</td><td>031</td><td>0311</td><td>03118</td><td>Penangkapan Ikan Hias Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>139</td><td>031</td><td>0311</td><td>03119</td><td>Penangkapan Biota Air Lainnya Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>140</td><td>031</td><td>0312</td><td>03121</td><td>Penangkapan Pisces/Ikan Bersirip Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>141</td><td>031</td><td>0312</td><td>03122</td><td>Penangkapan Crustacea Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>142</td><td>031</td><td>0312</td><td>03123</td><td>Penangkapan Mollusca Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>143</td><td>031</td><td>0312</td><td>03124</td><td>Penangkapan/Pengambilan Tumbuhan Air Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>144</td><td>031</td><td>0312</td><td>03125</td><td>Penangkapan/Pengambilan Induk/Benih Ikan Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>145</td><td>031</td><td>0312</td><td>03126</td><td>Penangkapan Ikan Hias Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>146</td><td>031</td><td>0312</td><td>03129</td><td>Penangkapan Biota Air Lainnya Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>147</td><td>031</td><td>0313</td><td>03131</td><td>Jasa Sarana Produksi Penangkapan Ikan Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>148</td><td>031</td><td>0313</td><td>03132</td><td>Jasa Produksi Penangkapan Ikan Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>149</td><td>031</td><td>0313</td><td>03133</td><td>Jasa Pasca Panen Penangkapan Ikan Di Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>150</td><td>031</td><td>0314</td><td>03141</td><td>Jasa Sarana Produksi Penangkapan Ikan Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>151</td><td>031</td><td>0314</td><td>03142</td><td>Jasa Produksi Penangkapan Ikan Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>152</td><td>031</td><td>0314</td><td>03143</td><td>Jasa Pasca Panen Penangkapan Ikan Di Perairan Darat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>153</td><td>031</td><td>0315</td><td>03151</td><td>Penangkapan/Pengambilan Ikan Bersirip (Pisces) Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>154</td><td>031</td><td>0315</td><td>03152</td><td>Penangkapan/Pengambilan Crustacea Yang Dilindungi dan/atau Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>155</td><td>031</td><td>0315</td><td>03153</td><td>Penangkapan/Pengambilan Mollusca Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>156</td><td>031</td><td>0315</td><td>03154</td><td>Penangkapan/Pengambilan Coelenterata Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>157</td><td>031</td><td>0315</td><td>03155</td><td>Penangkapan/Pengambilan Echinodermata Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>158</td><td>031</td><td>0315</td><td>03156</td><td>Penangkapan/Pengambilan Amphibia Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>159</td><td>031</td><td>0315</td><td>03157</td><td>Penangkapan/Pengambilan Reptilia Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>160</td><td>031</td><td>0315</td><td>03158</td><td>Penangkapan/Pengambilan Mamalia Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>161</td><td>031</td><td>0315</td><td>03159</td><td>Penangkapan/Pengambilan Algae dan Biota Perairan Lainnya Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>162</td><td>032</td><td>0321</td><td>03211</td><td>Pembesaran Pisces/Ikan Bersirip Laut</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>163</td><td>032</td><td>0321</td><td>03212</td><td>Pembenihan Ikan Laut</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>164</td><td>032</td><td>0321</td><td>03213</td><td>Budidaya Ikan Hias Air Laut</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>165</td><td>032</td><td>0321</td><td>03214</td><td>Budidaya Karang (Coral)</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>166</td><td>032</td><td>0321</td><td>03215</td><td>Pembesaran Mollusca Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>167</td><td>032</td><td>0321</td><td>03216</td><td>Pembesaran Crustacea Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>168</td><td>032</td><td>0321</td><td>03217</td><td>Pembesaran Tumbuhan Air Laut</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>169</td><td>032</td><td>0321</td><td>03219</td><td>Budidaya Air Laut Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>170</td><td>032</td><td>0322</td><td>03221</td><td>Pembesaran Ikan Air Tawar Di Kolam</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>171</td><td>032</td><td>0322</td><td>03222</td><td>Pembesaran Ikan Air Tawar Di Karamba Jaring Apung</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>172</td><td>032</td><td>0322</td><td>03223</td><td>Pembesaran Ikan Air Tawar Di Karamba</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>173</td><td>032</td><td>0322</td><td>03224</td><td>Pembesaran Ikan Air Tawar Di Sawah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>174</td><td>032</td><td>0322</td><td>03225</td><td>Budidaya Ikan Hias Air Tawar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>175</td><td>032</td><td>0322</td><td>03226</td><td>Pembenihan Ikan Air Tawar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>176</td><td>032</td><td>0322</td><td>03227</td><td>Pembesaran Ikan Air Tawar Di Karamba Jaring Tancap</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>177</td><td>032</td><td>0322</td><td>03229</td><td>Budidaya Ikan Air Tawar di Media Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>178</td><td>032</td><td>0323</td><td>03231</td><td>Jasa Sarana Produksi Budidaya Ikan Laut</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>179</td><td>032</td><td>0323</td><td>03232</td><td>Jasa Produksi Budidaya Ikan Laut</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>180</td><td>032</td><td>0323</td><td>03233</td><td>Jasa Pasca Panen Budidaya Ikan Laut</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>181</td><td>032</td><td>0324</td><td>03241</td><td>Jasa Sarana Produksi Budidaya Ikan Air Tawar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>182</td><td>032</td><td>0324</td><td>03242</td><td>Jasa Produksi Budidaya Ikan Air Tawar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>183</td><td>032</td><td>0324</td><td>03243</td><td>Jasa Pasca Panen Budidaya Ikan Air Tawar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>184</td><td>032</td><td>0325</td><td>03251</td><td>Pembesaran Pisces/Ikan Bersirip Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>185</td><td>032</td><td>0325</td><td>03252</td><td>Pembenihan Ikan Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>186</td><td>032</td><td>0325</td><td>03253</td><td>Pembesaran Mollusca Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>187</td><td>032</td><td>0325</td><td>03254</td><td>Pembesaran Crustacea Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>188</td><td>032</td><td>0325</td><td>03255</td><td>Pembesaran Tumbuhan Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>189</td><td>032</td><td>0325</td><td>03259</td><td>Budidaya Biota Air Payau Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>190</td><td>032</td><td>0326</td><td>03261</td><td>Jasa Sarana Produksi Budidaya Ikan Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>191</td><td>032</td><td>0326</td><td>03262</td><td>Jasa Produksi Budidaya Ikan Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>192</td><td>032</td><td>0326</td><td>03263</td><td>Jasa Pasca Panen Budidaya Ikan Air Payau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>193</td><td>032</td><td>0327</td><td>03271</td><td>Pengembangbiakan Ikan Bersirip (Pisces) Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>194</td><td>032</td><td>0327</td><td>03272</td><td>Pengembangbiakan Crustacea Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>195</td><td>032</td><td>0327</td><td>03273</td><td>Pengembangbiakan Mollusca Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>196</td><td>032</td><td>0327</td><td>03274</td><td>Pengembangbiakan Coelenterata Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>197</td><td>032</td><td>0327</td><td>03275</td><td>Pengembangbiakan Echinoderma Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>198</td><td>032</td><td>0327</td><td>03276</td><td>Pengembangbiakan Amphibia Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>199</td><td>032</td><td>0327</td><td>03277</td><td>Pengembangbiakan Reptilia Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>200</td><td>032</td><td>0327</td><td>03278</td><td>Pengembangbiakan Mamalia Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>201</td><td>032</td><td>0327</td><td>03279</td><td>Pengembangbiakan Algae dan Biota Perairan Lainnya Yang Dilindungi dan/atau Termasuk Dalam Appendiks Cites</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>&nbsp;</td><td>Pertambangan dan Penggalian</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>1</td><td>051</td><td>0510</td><td>05100</td><td>Pertambangan Batu Bara</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>2</td><td>052</td><td>0520</td><td>05200</td><td>Pertambangan Lignit</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>3</td><td>061</td><td>0610</td><td>06100</td><td>Pertambangan Minyak Bumi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>4</td><td>062</td><td>0620</td><td>06201</td><td>Pertambangan Gas Alam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>5</td><td>062</td><td>0620</td><td>06202</td><td>Pengusahaan Tenaga Panas Bumi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>6</td><td>071</td><td>0710</td><td>07101</td><td>Pertambangan Pasir Besi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>7</td><td>071</td><td>0710</td><td>07102</td><td>Pertambangan Bijih Besi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>8</td><td>072</td><td>0721</td><td>07210</td><td>Pertambangan Bijih Uranium Dan Torium</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>9</td><td>072</td><td>0729</td><td>07291</td><td>Pertambangan Bijih Timah</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>10</td><td>072</td><td>0729</td><td>07292</td><td>Pertambangan Bijih Timah Hitam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>11</td><td>072</td><td>0729</td><td>07293</td><td>Pertambangan Bijih Bauksit</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>12</td><td>072</td><td>0729</td><td>07294</td><td>Pertambangan Bijih Tembaga</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>13</td><td>072</td><td>0729</td><td>07295</td><td>Pertambangan Bijih Nikel</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>14</td><td>072</td><td>0729</td><td>07296</td><td>Pertambangan Bijih Mangan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>15</td><td>072</td><td>0729</td><td>07299</td><td>Pertambangan Bahan Galian Lainnya Yang Tidak Mengandung Bijih Besi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>16</td><td>073</td><td>0730</td><td>07301</td><td>Pertambangan Emas Dan Perak</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>17</td><td>073</td><td>0730</td><td>07309</td><td>Pertambangan Bijih Logam Mulia Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>18</td><td>081</td><td>0810</td><td>08101</td><td>Penggalian Batu Hias Dan Batu Bangunan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>19</td><td>081</td><td>0810</td><td>08102</td><td>Penggalian Batu Kapur/Gamping</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>20</td><td>081</td><td>0810</td><td>08103</td><td>Penggalian Kerikil/Sirtu</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>21</td><td>081</td><td>0810</td><td>08104</td><td>Penggalian Pasir</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>22</td><td>081</td><td>0810</td><td>08105</td><td>Penggalian Tanah dan Tanah Liat</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>23</td><td>081</td><td>0810</td><td>08106</td><td>Penggalian Gips</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>24</td><td>081</td><td>0810</td><td>08107</td><td>Penggalian Tras</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>25</td><td>081</td><td>0810</td><td>08108</td><td>Penggalian Batu Apung</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>26</td><td>081</td><td>0810</td><td>08109</td><td>Penggalian batu, pasir dan tanah liat lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>27</td><td>089</td><td>0891</td><td>08911</td><td>Pertambangan Belerang</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>28</td><td>089</td><td>0891</td><td>08912</td><td>Pertambangan Fosfat</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>29</td><td>089</td><td>0891</td><td>08913</td><td>Pertambangan Nitrat</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>30</td><td>089</td><td>0891</td><td>08914</td><td>Pertambangan Yodium</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>31</td><td>089</td><td>0891</td><td>08915</td><td>Pertambangan Potash (Kalium Karbonat)</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>32</td><td>089</td><td>0891</td><td>08919</td><td>Pertambangan Mineral, Bahan Kimia Dan Bahan Pupuk Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>33</td><td>089</td><td>0892</td><td>08920</td><td>Ekstraksi Tanah Gemuk (Peat)</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>34</td><td>089</td><td>0893</td><td>08930</td><td>Ekstraksi Garam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>35</td><td>089</td><td>0899</td><td>08991</td><td>Pertambangan Batu Mulia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>36</td><td>089</td><td>0899</td><td>08992</td><td>Penggalian Feldspar dan Kalsit</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>37</td><td>089</td><td>0899</td><td>08993</td><td>Pertambangan Aspal Alam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>38</td><td>089</td><td>0899</td><td>08994</td><td>Penggalian Asbes</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>39</td><td>089</td><td>0899</td><td>08995</td><td>Penggalian Kuarsa/Pasir Kuarsa</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>40</td><td>089</td><td>0899</td><td>08999</td><td>Pertambangan Dan Penggalian Lainnya Ytdl</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>41</td><td>091</td><td>0910</td><td>09100</td><td>Aktivitas Penunjang Pertambangan Minyak Bumi dan Gas Alam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>42</td><td>099</td><td>0990</td><td>09900</td><td>Aktivitas Penunjang pertambangan dan penggalian lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>&nbsp;</td><td>Industri Pengolahan</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>1</td><td>101</td><td>1011</td><td>10110</td><td>Kegiatan Rumah Potong Dan Pengepakan Daging Bukan Unggas </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>2</td><td>101</td><td>1012</td><td>10120</td><td>Kegiatan Rumah Potong Dan Pengepakan Daging Unggas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>3</td><td>101</td><td>1013</td><td>10130</td><td>Industri Pengolahan Dan Pengawetan Produk Daging Dan Daging Unggas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>4</td><td>102</td><td>1021</td><td>10211</td><td>Industri Penggaraman/Pengeringan Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>5</td><td>102</td><td>1021</td><td>10212</td><td>Industri Pengasapan/Pemanggangan Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>6</td><td>102</td><td>1021</td><td>10213</td><td>Industri Pembekuan Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>7</td><td>102</td><td>1021</td><td>10214</td><td>Industri Pemindangan Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>8</td><td>102</td><td>1021</td><td>10215</td><td>Industri Peragian/Fermentasi Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>9</td><td>102</td><td>1021</td><td>10216</td><td>Industri Berbasis Daging Lumatan Dan Surimi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>10</td><td>102</td><td>1021</td><td>10217</td><td>Industri Pendinginan/Pengesan Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>11</td><td>102</td><td>1021</td><td>10219</td><td>Industri Pengolahan Dan Pengawetan Lainnya Untuk Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>12</td><td>102</td><td>1022</td><td>10221</td><td>Industri Pengolahan Dan Pengawetan Ikan Dan Biota Air (Bukan Udang) Dalam Kaleng</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>13</td><td>102</td><td>1022</td><td>10222</td><td>Industri Pengolahan Dan Pengawetan Udang Dalam Kaleng</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>14</td><td>102</td><td>1029</td><td>10291</td><td>Industri Penggaraman/Pengeringan Biota Air Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>15</td><td>102</td><td>1029</td><td>10292</td><td>Industri Pengasapan/Pemanggangan Biota Air Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>16</td><td>102</td><td>1029</td><td>10293</td><td>Industri Pembekuan Biota Air Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>17</td><td>102</td><td>1029</td><td>10294</td><td>Industri Pemindangan Biota Air Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>18</td><td>102</td><td>1029</td><td>10295</td><td>Industri Peragian/Fermentasi Biota Air Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>19</td><td>102</td><td>1029</td><td>10296</td><td>Industri Berbasis Lumatan Biota Air Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>20</td><td>102</td><td>1029</td><td>10297</td><td>Industri Pendinginan/Pengesan Biota Air Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>21</td><td>102</td><td>1029</td><td>10298</td><td>Industri Pengolahan Rumput Laut</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>22</td><td>102</td><td>1029</td><td>10299</td><td>Industri Pengolahan Dan Pengawetan Lainnya Untuk Biota Air Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>23</td><td>103</td><td>1031</td><td>10311</td><td>Industri Pengasinan Buah-Buahan Dan Sayuran</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>24</td><td>103</td><td>1031</td><td>10312</td><td>Industri Pelumatan Buah-Buahan Dan Sayuran</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>25</td><td>103</td><td>1031</td><td>10313</td><td>Industri Pengeringan Buah-Buahan Dan Sayuran</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>26</td><td>103</td><td>1031</td><td>10314</td><td>Industri Pembekuan Buah-Buahan Dan Sayuran</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>27</td><td>103</td><td>1032</td><td>10320</td><td>Industri Pengolahan Dan Pengawetan Buah-Buahan Dan Sayuran Dalam Kaleng</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>28</td><td>103</td><td>1033</td><td>10330</td><td>Industri Pengolahan Sari Buah Dan Sayuran</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>29</td><td>103</td><td>1039</td><td>10391</td><td>Industri Tempe Kedelai</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>30</td><td>103</td><td>1039</td><td>10392</td><td>Industri Tahu Kedelai </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>31</td><td>103</td><td>1039</td><td>10393</td><td>Industri Pengolahan Dan Pengawetan Kedelai Dan Kacang-Kacangan Lainnya Selain Tahu Dan Tempe</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>32</td><td>103</td><td>1039</td><td>10399</td><td>Industri Pengolahan Dan Pengawetan Lainnya Buahbuahan Dan Sayuran Bukan Kacang-Kacangan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>33</td><td>104</td><td>1041</td><td>10411</td><td>Industri Minyak dan Lemak Nabati dan Hewani</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>34</td><td>104</td><td>1041</td><td>10412</td><td>Industri Margarine</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>35</td><td>104</td><td>1041</td><td>10413</td><td>Industri Minyak Mentah Dan Lemak Hewani Selain Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>36</td><td>104</td><td>1041</td><td>10414</td><td>Industri Minyak Ikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>37</td><td>104</td><td>1041</td><td>10415</td><td>Industri Minyak Goreng Bukan Minyak Kelapa Dan Minyak Kelapa Sawit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>38</td><td>104</td><td>1042</td><td>10421</td><td>Industri Kopra</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>39</td><td>104</td><td>1042</td><td>10422</td><td>Industri Minyak Mentah Kelapa</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>40</td><td>104</td><td>1042</td><td>10423</td><td>Industri Minyak Goreng Kelapa</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>41</td><td>104</td><td>1042</td><td>10424</td><td>Industri Pelet Kelapa</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>42</td><td>104</td><td>1043</td><td>10431</td><td>Industri Minyak Mentah Kelapa Sawit (Crude Palm Oil)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>43</td><td>104</td><td>1043</td><td>10432</td><td>Industri Minyak Mentah Inti Kelapa Sawit (Crude Palm Kernel Oil)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>44</td><td>104</td><td>1043</td><td>10433</td><td>Industri Pemisahan/Fraksinasi Minyak Mentah Kelapa Sawit Dan Minyak Mentah Inti Kelapa Sawit </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>45</td><td>104</td><td>1043</td><td>10434</td><td>Industri Pemurnian Minyak Mentah Kelapa Sawit Dan Minyak Mentah Inti Kelapa Sawit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>46</td><td>104</td><td>1043</td><td>10435</td><td>Industri Pemisahan/Fraksinasi Minyak Murni Kelapa Sawit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>47</td><td>104</td><td>1043</td><td>10436</td><td>Industri Pemisahan/Fraksinasi Minyak Murni Inti Kelapa Sawit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>48</td><td>104</td><td>1043</td><td>10437</td><td>Industri Minyak Goreng Kelapa Sawit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>49</td><td>104</td><td>1049</td><td>10490</td><td>Industri Minyak Mentah Dan Lemak Nabati Dan Hewani Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>50</td><td>105</td><td>1051</td><td>10510</td><td>Industri Pengolahan Susu Segar Dan Krim</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>51</td><td>105</td><td>1052</td><td>10520</td><td>Industri Pengolahan Susu Bubuk Dan Susu Kental</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>52</td><td>105</td><td>1053</td><td>10531</td><td>Industri Pengolahan Es Krim</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>53</td><td>105</td><td>1053</td><td>10532</td><td>Industri Pengolahan Es Sejenisnya Yang Dapat Dimakan (Bukan Es Batu Dan Es Balok) </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>54</td><td>105</td><td>1059</td><td>10590</td><td>Industri Pengolahan Produk Dari Susu Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>55</td><td>106</td><td>1061</td><td>10611</td><td>Industri Penggilingan Gandum Dan Serelia Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>56</td><td>106</td><td>1061</td><td>10612</td><td>Industri Penggilingan Aneka Kacang (Termasuk Leguminous)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>57</td><td>106</td><td>1061</td><td>10613</td><td>Industri Penggilingan Aneka Umbi Dan Sayuran (Termasuk Rhizoma)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>58</td><td>106</td><td>1061</td><td>10614</td><td>Industri Tepung Campuran Dan Adonan Tepung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>59</td><td>106</td><td>1061</td><td>10615</td><td>Industri Makanan Sereal</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>60</td><td>106</td><td>1061</td><td>10616</td><td>Industri Tepung Terigu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>61</td><td>106</td><td>1062</td><td>10621</td><td>Industri Pati Ubi Kayu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>62</td><td>106</td><td>1062</td><td>10622</td><td>Industri Berbagai Macam Pati Palma </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>63</td><td>106</td><td>1062</td><td>10623</td><td>Industri Glukosa Dan Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>64</td><td>106</td><td>1062</td><td>10629</td><td>Industri Pati Dan Produk Pati Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>65</td><td>106</td><td>1063</td><td>10631</td><td>Industri Penggilingan Padi Dan Penyosohan Beras</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>66</td><td>106</td><td>1063</td><td>10632</td><td>Industri Penggilingan Dan Pembersihan Jagung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>67</td><td>106</td><td>1063</td><td>10633</td><td>Industri Tepung Beras Dan Tepung Jagung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>68</td><td>106</td><td>1063</td><td>10634</td><td>Industri Pati Beras Dan Jagung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>69</td><td>106</td><td>1063</td><td>10635</td><td>Industri Pemanis Dari Beras Dan Jagung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>70</td><td>106</td><td>1063</td><td>10636</td><td>Industri Minyak Dari Jagung Dan Beras</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>71</td><td>107</td><td>1071</td><td>10710</td><td>Industri Produk Roti Dan Kue</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>72</td><td>107</td><td>1072</td><td>10721</td><td>Industri Gula Pasir</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>73</td><td>107</td><td>1072</td><td>10722</td><td>Industri Gula Merah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>74</td><td>107</td><td>1072</td><td>10723</td><td>Industri Sirop</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>75</td><td>107</td><td>1072</td><td>10729</td><td>Industri Pengolahan Gula Lainnya Bukan Sirop</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>76</td><td>107</td><td>1073</td><td>10731</td><td>Industri Kakao</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>77</td><td>107</td><td>1073</td><td>10732</td><td>Industri Makanan Dari Cokelat Dan Kembang Gula Dari Coklat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>78</td><td>107</td><td>1073</td><td>10733</td><td>Industri Manisan Buah-Buahan Dan Sayuran Kering</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>79</td><td>107</td><td>1073</td><td>10734</td><td>Industri Kembang Gula</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>80</td><td>107</td><td>1073</td><td>10739</td><td>Industri Kembang Gula Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>81</td><td>107</td><td>1074</td><td>10740</td><td>Industri Makaroni, Mie Dan Produk Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>82</td><td>107</td><td>1075</td><td>10750</td><td>Industri Makanan Dan Masakan Olahan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>83</td><td>107</td><td>1076</td><td>10761</td><td>Industri Pengolahan Kopi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>84</td><td>107</td><td>1076</td><td>10762</td><td>Industri Pengolahan Herbal (Herb Infusion)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>85</td><td>107</td><td>1076</td><td>10763</td><td>Industri Pengolahan Teh</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>86</td><td>107</td><td>1077</td><td>10771</td><td>Industri Kecap</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>87</td><td>107</td><td>1077</td><td>10772</td><td>Industri Bumbu Masak Dan Penyedap Masakan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>88</td><td>107</td><td>1077</td><td>10773</td><td>Industri Produk Masak Dari Kelapa</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>89</td><td>107</td><td>1077</td><td>10774</td><td>Industri Pengolahan Garam</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>90</td><td>107</td><td>1077</td><td>10779</td><td>Industri Produk Masak Lainnya</td><td>Diizinkan</td></tr>
+ <tr><td>91</td><td>107</td><td>1079</td><td>10791</td><td>Industri Makanan Bayi</td><td>Diizinkan</td></tr>
+ <tr><td>92</td><td>107</td><td>1079</td><td>10792</td><td>Industri Kue Basah</td><td>Diizinkan</td></tr>
+ <tr><td>93</td><td>107</td><td>1079</td><td>10793</td><td>Industri Makanan Dari Kedele Dan Kacang-Kacangan Lainnya Bukan Kecap, Tempe Dan Tahu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>94</td><td>107</td><td>1079</td><td>10794</td><td>Industri Kerupuk, Keripik, Peyek Dan Sejenisnya</td><td>Diizinkan</td></tr>
+ <tr><td>95</td><td>107</td><td>1079</td><td>10795</td><td>Industri Krimer Nabati</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>96</td><td>107</td><td>1079</td><td>10796</td><td>Industri Dodol</td><td>Diizinkan</td></tr>
+ <tr><td>97</td><td>107</td><td>1079</td><td>10799</td><td>Industri Produk Makanan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>98</td><td>108</td><td>1080</td><td>10801</td><td>Industri Ransum Makanan Hewan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>99</td><td>108</td><td>1080</td><td>10802</td><td>Industri Konsentrat Makanan Hewan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>100</td><td>110</td><td>1101</td><td>11010</td><td>Industri Minuman Beralkohol Hasil Destilasi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>101</td><td>110</td><td>1102</td><td>11020</td><td>Industri Minuman Beralkohol Hasil Fermentasi Anggur Dan Hasil Pertanian Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>102</td><td>110</td><td>1103</td><td>11031</td><td>Industri Minuman Beralkohol Hasil Fermentasi Malt</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>103</td><td>110</td><td>1103</td><td>11032</td><td>Industri Malt</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>104</td><td>110</td><td>1104</td><td>11040</td><td>Industri Minuman Ringan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>105</td><td>110</td><td>1105</td><td>11051</td><td>Industri Air Kemasan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>106</td><td>110</td><td>1105</td><td>11052</td><td>Industri Air Minum Isi Ulang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>107</td><td>110</td><td>1109</td><td>11090</td><td>Industri Minuman Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>108</td><td>120</td><td>1201</td><td>12011</td><td>Industri Sigaret Kretek Tangan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>109</td><td>120</td><td>1201</td><td>12012</td><td>Industri Rokok Putih</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>110</td><td>120</td><td>1201</td><td>12013</td><td>Industri Sigaret Kretek Mesin</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>111</td><td>120</td><td>1201</td><td>12019</td><td>Industri Rokok Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>112</td><td>120</td><td>1209</td><td>12091</td><td>Industri Pengeringan Dan Pengolahan Tembakau</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>113</td><td>120</td><td>1209</td><td>12099</td><td>Industri Bumbu Rokok Serta Kelengkapan Rokok Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>114</td><td>131</td><td>1311</td><td>13111</td><td>Industri Persiapan Serat Tekstil</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>115</td><td>131</td><td>1311</td><td>13112</td><td>Industri Pemintalan Benang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>116</td><td>131</td><td>1311</td><td>13113</td><td>Industri Pemintalan Benang Jahit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>117</td><td>131</td><td>1312</td><td>13121</td><td>Industri Pertenunan (Bukan Pertenunan Karung Goni Dan Karung Lainnya)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>118</td><td>131</td><td>1312</td><td>13122</td><td>Industri Kain Tenun Ikat</td><td>Diizinkan</td></tr>
+ <tr><td>119</td><td>131</td><td>1312</td><td>13123</td><td>Industri Bulu Tiruan Tenunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>120</td><td>131</td><td>1313</td><td>13131</td><td>Industri Penyempurnaan Benang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>121</td><td>131</td><td>1313</td><td>13132</td><td>Industri Penyempurnaan Kain</td><td>Diizinkan</td></tr>
+ <tr><td>122</td><td>131</td><td>1313</td><td>13133</td><td>Industri Pencetakan Kain </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>123</td><td>131</td><td>1313</td><td>13134</td><td>Industri Batik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>124</td><td>139</td><td>1391</td><td>13911</td><td>Industri Kain Rajutan</td><td>Diizinkan</td></tr>
+ <tr><td>125</td><td>139</td><td>1391</td><td>13912</td><td>Industri Kain Sulaman</td><td>Diizinkan</td></tr>
+ <tr><td>126</td><td>139</td><td>1391</td><td>13913</td><td>Industri Bulu Tiruan Rajutan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>127</td><td>139</td><td>1392</td><td>13921</td><td>Industri Barang Jadi Tekstil Untuk Keperluan Rumah Tangga</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>128</td><td>139</td><td>1392</td><td>13922</td><td>Industri Barang Jadi Tekstil Sulaman</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>129</td><td>139</td><td>1392</td><td>13923</td><td>Industri Bantal Dan Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>130</td><td>139</td><td>1392</td><td>13924</td><td>Industri Barang Jadi Rajutan Dan Sulaman </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>131</td><td>139</td><td>1392</td><td>13925</td><td>Industri Karung Goni</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>132</td><td>139</td><td>1392</td><td>13926</td><td>Industri Karung Bukan Goni </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>133</td><td>139</td><td>1392</td><td>13929</td><td>Industri Barang Jadi Tekstil Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>134</td><td>139</td><td>1393</td><td>13930</td><td>Industri Karpet Dan Permadani</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>135</td><td>139</td><td>1394</td><td>13941</td><td>Industri Tali</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>136</td><td>139</td><td>1394</td><td>13942</td><td>Industri Barang Dari Tali</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>137</td><td>139</td><td>1399</td><td>13991</td><td>Industri Kain Pita (Narrow Fabric)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>138</td><td>139</td><td>1399</td><td>13992</td><td>Industri Yang Menghasilkan Kain Keperluan Industri</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>139</td><td>139</td><td>1399</td><td>13993</td><td>Industri Non Woven (Bukan Tenunan)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>140</td><td>139</td><td>1399</td><td>13994</td><td>Industri Kain Ban</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>141</td><td>139</td><td>1399</td><td>13995</td><td>Industri Kapuk</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>142</td><td>139</td><td>1399</td><td>13996</td><td>Industri Kain Tulle Dan Kain Jaring</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>143</td><td>139</td><td>1399</td><td>13999</td><td>Industri Tekstil Lainnya Ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>144</td><td>141</td><td>1411</td><td>14111</td><td>Industri Pakaian Jadi (Konveksi) Dari Tekstil  </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>145</td><td>141</td><td>1411</td><td>14112</td><td>Industri Pakaian Jadi (Konveksi) Dari Kulit </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>146</td><td>141</td><td>1412</td><td>14120</td><td>Penjahitan Dan Pembuatan Pakaian Sesuai Pesanan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>147</td><td>141</td><td>1413</td><td>14131</td><td>Industri Perlengkapan Pakaian Dari Tekstil </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>148</td><td>141</td><td>1413</td><td>14132</td><td>Industri Perlengkapan Pakaian Dari Kulit </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>149</td><td>142</td><td>1420</td><td>14200</td><td>Industri Pakaian Jadi dan Barang dari Kulit Berbulu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>150</td><td>143</td><td>1430</td><td>14301</td><td>Industri Pakaian Jadi Rajutan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>151</td><td>143</td><td>1430</td><td>14302</td><td>Industri Pakaian Jadi Sulaman/Bordir </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>152</td><td>143</td><td>1430</td><td>14303</td><td>Industri Rajutan Kaos Kaki Dan Sejenisnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>153</td><td>151</td><td>1511</td><td>15111</td><td>Industri Pengawetan Kulit </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>154</td><td>151</td><td>1511</td><td>15112</td><td>Industri Penyamakan Kulit </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>155</td><td>151</td><td>1511</td><td>15113</td><td>Industri Pencelupan Kulit Bulu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>156</td><td>151</td><td>1511</td><td>15114</td><td>Industri Kulit Komposisi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>157</td><td>151</td><td>1512</td><td>15121</td><td>Industri Barang Dari Kulit Dan Kulit Komposisi Untuk Keperluan Pribadi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>158</td><td>151</td><td>1512</td><td>15122</td><td>Industri Barang Dari Kulit Dan Kulit Komposisi Untuk Keperluan Teknik/Industri </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>159</td><td>151</td><td>1512</td><td>15123</td><td>Industri Barang Dari Kulit Dan Kulit Komposisi Untuk Keperluan Hewan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>160</td><td>151</td><td>1512</td><td>15129</td><td>Industri Barang Dari Kulit Dan Kulit Komposisi Untuk Keperluan Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>161</td><td>152</td><td>1520</td><td>15201</td><td>Industri Alas Kaki Untuk Keperluan Sehari-Hari </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>162</td><td>152</td><td>1520</td><td>15202</td><td>Industri Sepatu Olahraga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>163</td><td>152</td><td>1520</td><td>15203</td><td>Industri Sepatu Teknik Lapangan/Keperluan Industri </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>164</td><td>152</td><td>1520</td><td>15209</td><td>Industri Alas Kaki Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>165</td><td>161</td><td>1610</td><td>16101</td><td>Industri Penggergajian Kayu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>166</td><td>161</td><td>1610</td><td>16102</td><td>Industri Pengawetan Kayu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>167</td><td>161</td><td>1610</td><td>16103</td><td>Industri Pengawetan Rotan, Bambu Dan Sejenisnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>168</td><td>161</td><td>1610</td><td>16104</td><td>Industri Pengolahan Rotan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>169</td><td>161</td><td>1610</td><td>16105</td><td>Industri Partikel Kayu Dan Sejenisnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>170</td><td>162</td><td>1621</td><td>16211</td><td>Industri Kayu Lapis </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>171</td><td>162</td><td>1621</td><td>16212</td><td>Industri Kayu Lapis Laminasi, Termasuk Decorative Plywood </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>172</td><td>162</td><td>1621</td><td>16213</td><td>Industri Panel Kayu Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>173</td><td>162</td><td>1621</td><td>16214</td><td>Industri Veneer </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>174</td><td>162</td><td>1621</td><td>16215</td><td>Industri Kayu Laminasi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>175</td><td>162</td><td>1622</td><td>16221</td><td>Industri Barang Bangunan Dari Kayu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>176</td><td>162</td><td>1622</td><td>16222</td><td>Industri Bangunan Prafabrikasi Dari Kayu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>177</td><td>162</td><td>1623</td><td>16230</td><td>Industri Wadah Dari Kayu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>178</td><td>162</td><td>1629</td><td>16291</td><td>Industri Barang Anyaman Dari Rotan Dan Bambu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>179</td><td>162</td><td>1629</td><td>16292</td><td>Industri Barang Anyaman Dari Tanaman Bukan Rotan Dan Bambu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>180</td><td>162</td><td>1629</td><td>16293</td><td>Industri Kerajinan Ukiran Dari Kayu Bukan Mebeller </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>181</td><td>162</td><td>1629</td><td>16294</td><td>Industri Alat Dapur Dari Kayu, Rotan Dan Bambu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>182</td><td>162</td><td>1629</td><td>16295</td><td>Industri Kayu Bakar Dan Pelet Kayu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>183</td><td>162</td><td>1629</td><td>16299</td><td>Industri Barang Dari Kayu, Rotan, Gabus Lainnya Ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>184</td><td>170</td><td>1701</td><td>17011</td><td>Industri Bubur Kertas (Pulp) </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>185</td><td>170</td><td>1701</td><td>17012</td><td>Industri Kertas Budaya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>186</td><td>170</td><td>1701</td><td>17013</td><td>Industri Kertas Berharga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>187</td><td>170</td><td>1701</td><td>17014</td><td>Industri Kertas Khusus </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>188</td><td>170</td><td>1701</td><td>17019</td><td>Industri Kertas Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>189</td><td>170</td><td>1702</td><td>17021</td><td>Industri Kertas Dan Papan Kertas Bergelombang </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>190</td><td>170</td><td>1702</td><td>17022</td><td>Industri Kemasan Dan Kotak Dari Kertas Dan Karton</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>191</td><td>170</td><td>1709</td><td>17091</td><td>Industri Kertas Tissue </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>192</td><td>170</td><td>1709</td><td>17099</td><td>Industri Barang Dari Kertas Dan Papan Kertas Lainnya Ytdl </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>193</td><td>181</td><td>1811</td><td>18111</td><td>Industri Pencetakan Umum </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>194</td><td>181</td><td>1811</td><td>18112</td><td>Industri Pencetakan Khusus </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>195</td><td>181</td><td>1811</td><td>18113</td><td>Industri Pencetakan 3D Printing </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>196</td><td>181</td><td>1812</td><td>18120</td><td>Kegiatan Jasa Penunjang Pencetakan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>197</td><td>182</td><td>1820</td><td>18201</td><td>Reproduksi Media Rekaman Suara Dan Piranti Lunak </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>198</td><td>182</td><td>1820</td><td>18202</td><td>Reproduksi Media Rekaman Film Dan Video </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>199</td><td>191</td><td>1910</td><td>19100</td><td>Industri Produk dari Batu Bara</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>200</td><td>192</td><td>1921</td><td>19211</td><td>Industri Bahan Bakar Dari Pemurnian Dan Pengilangan Minyak Bumi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>201</td><td>192</td><td>1921</td><td>19212</td><td>Industri Pembuatan Minyak Pelumas </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>202</td><td>192</td><td>1921</td><td>19213</td><td>Industri Pengolahan Kembali Minyak Pelumas Bekas </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>203</td><td>192</td><td>1921</td><td>19214</td><td>Industri Pengolahan Minyak Pelumas Bekas Menjadi Bahan Bakar </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>204</td><td>192</td><td>1929</td><td>19291</td><td>Industri Produk Dari Hasil Kilang Minyak Bumi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>205</td><td>192</td><td>1929</td><td>19292</td><td>Industri Briket Batu Bara </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>206</td><td>201</td><td>2011</td><td>20111</td><td>Industri Kimia Dasar Anorganik Khlor Dan Alkali </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>207</td><td>201</td><td>2011</td><td>20112</td><td>Industri Kimia Dasar Anorganik Gas Industri </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>208</td><td>201</td><td>2011</td><td>20113</td><td>Industri Kimia Dasar Anorganik Pigmen </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>209</td><td>201</td><td>2011</td><td>20114</td><td>Industri Kimia Dasar Anorganik Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>210</td><td>201</td><td>2011</td><td>20115</td><td>Industri Kimia Dasar Organik Yang Bersumber Dari Hasil Pertanian </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>211</td><td>201</td><td>2011</td><td>20116</td><td>Industri Kimia Dasar Organik Untuk Bahan Baku Zat Warna Dan Pigmen, Zat Warna Dan Pigmen </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>212</td><td>201</td><td>2011</td><td>20117</td><td>Industri Kimia Dasar Organik Yang Bersumber Dari Minyak Bumi, Gas Alam Dan Batu Bara </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>213</td><td>201</td><td>2011</td><td>20118</td><td>Industri Kimia Dasar Organik Yang Menghasilkan Bahan Kimia Khusus </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>214</td><td>201</td><td>2011</td><td>20119</td><td>Industri Kimia Dasar Organik Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>215</td><td>201</td><td>2012</td><td>20121</td><td>Industri Pupuk Alam/Non Sintetis Hara Makro Primer</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>216</td><td>201</td><td>2012</td><td>20122</td><td>Industri Pupuk Buatan Tunggal Hara Makro Primer </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>217</td><td>201</td><td>2012</td><td>20123</td><td>Industri Pupuk Buatan Majemuk Hara Makro Primer </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>218</td><td>201</td><td>2012</td><td>20124</td><td>Industri Pupuk Buatan Campuran Hara Makro Primer </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>219</td><td>201</td><td>2012</td><td>20125</td><td>Industri Pupuk Hara Makro Sekunder </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>220</td><td>201</td><td>2012</td><td>20126</td><td>Industri Pupuk Hara Mikro </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>221</td><td>201</td><td>2012</td><td>20127</td><td>Industri Pupuk Pelengkap </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>222</td><td>201</td><td>2012</td><td>20128</td><td>Industri Media Tanam </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>223</td><td>201</td><td>2012</td><td>20129</td><td>Industri Pupuk Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>224</td><td>201</td><td>2013</td><td>20131</td><td>Industri Damar Buatan (Resin Sintetis) Dan Bahan Baku Plastik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>225</td><td>201</td><td>2013</td><td>20132</td><td>Industri Karet Buatan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>226</td><td>202</td><td>2021</td><td>20211</td><td>Industri Bahan Baku Pemberantas Hama (Bahan Aktif) </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>227</td><td>202</td><td>2021</td><td>20212</td><td>Industri Pemberantas Hama (Formulasi) </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>228</td><td>202</td><td>2021</td><td>20213</td><td>Industri Zat Pengatur Tumbuh </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>229</td><td>202</td><td>2021</td><td>20214</td><td>Industri Bahan Amelioran (Pembenah Tanah) </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>230</td><td>202</td><td>2022</td><td>20221</td><td>Industri Cat Dan Tinta Cetak </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>231</td><td>202</td><td>2022</td><td>20222</td><td>Industri Pernis (Termasuk Mastik) </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>232</td><td>202</td><td>2022</td><td>20223</td><td>Industri Lak </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>233</td><td>202</td><td>2023</td><td>20231</td><td>Industri Sabun Dan Bahan Pembersih Keperluan Rumah Tangga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>234</td><td>202</td><td>2023</td><td>20232</td><td>Industri Kosmetik Untuk Manusia, Termasuk Pasta Gigi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>235</td><td>202</td><td>2023</td><td>20233</td><td>Industri Kosmetik Untuk Hewan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>236</td><td>202</td><td>2023</td><td>20234</td><td>Industri Perekat Gigi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>237</td><td>202</td><td>2029</td><td>20291</td><td>Industri Perekat/Lem </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>238</td><td>202</td><td>2029</td><td>20292</td><td>Industri Bahan Peledak </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>239</td><td>202</td><td>2029</td><td>20293</td><td>Industri Tinta </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>240</td><td>202</td><td>2029</td><td>20294</td><td>Industri Minyak Atsiri </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>241</td><td>202</td><td>2029</td><td>20295</td><td>Industri Korek Api </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>242</td><td>202</td><td>2029</td><td>20296</td><td>Industri Minyak Atsiri Rantai Tengah </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>243</td><td>202</td><td>2029</td><td>20299</td><td>Industri Barang Kimia Lainnya Ytdl </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>244</td><td>203</td><td>2030</td><td>20301</td><td>Industri Serat/Benang/Strip Filamen Buatan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>245</td><td>203</td><td>2030</td><td>20302</td><td>Industri Serat Stapel Buatan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>246</td><td>210</td><td>2101</td><td>21011</td><td>Industri Bahan Farmasi Untuk Manusia </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>247</td><td>210</td><td>2101</td><td>21012</td><td>Industri Produk Farmasi Untuk Manusia </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>248</td><td>210</td><td>2101</td><td>21013</td><td>Industri Produk Farmasi Untuk Hewan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>249</td><td>210</td><td>2101</td><td>21014</td><td>Industri Bahan Farmasi Untuk Hewan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>250</td><td>210</td><td>2101</td><td>21015</td><td>Industri Alat Kesehatan Dalam Subgolongan 2101 </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>251</td><td>210</td><td>2102</td><td>21021</td><td>Industri Bahan Baku Obat Tradisional Untuk Manusia</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>252</td><td>210</td><td>2102</td><td>21022</td><td>Industri Produk Obat Tradisional Untuk Manusia </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>253</td><td>210</td><td>2102</td><td>21023</td><td>Industri Produk Obat Tradisional Untuk Hewan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>254</td><td>210</td><td>2102</td><td>21024</td><td>Industri Bahan Baku Obat Tradisional Untuk Hewan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>255</td><td>221</td><td>2211</td><td>22111</td><td>Industri Ban Luar Dan Ban Dalam </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>256</td><td>221</td><td>2211</td><td>22112</td><td>Industri Vulkanisir Ban </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>257</td><td>221</td><td>2212</td><td>22121</td><td>Industri Pengasapan Karet </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>258</td><td>221</td><td>2212</td><td>22122</td><td>Industri Remilling Karet </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>259</td><td>221</td><td>2212</td><td>22123</td><td>Industri Karet Remah (Crumb Rubber) </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>260</td><td>221</td><td>2219</td><td>22191</td><td>Industri Barang Dari Karet Untuk Keperluan Rumah Tangga </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>261</td><td>221</td><td>2219</td><td>22192</td><td>Industri Barang Dari Karet Untuk Keperluan Industri</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>262</td><td>221</td><td>2219</td><td>22193</td><td>Industri Barang Dari Karet Untuk Keperluan Infrastruktur </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>263</td><td>221</td><td>2219</td><td>22194</td><td>Industri Barang Dari Karet Untuk Kesehatan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>264</td><td>221</td><td>2219</td><td>22199</td><td>Industri Barang Dari Karet Lainnya Ytdl </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>265</td><td>222</td><td>2221</td><td>22210</td><td>Industri Barang Dari Plastik Untuk Bangunan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>266</td><td>222</td><td>2222</td><td>22220</td><td>Industri Barang Dari Plastik Untuk Pengemasan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>267</td><td>222</td><td>2223</td><td>22230</td><td>Industri Pipa Plastik Dan Perlengkapannya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>268</td><td>222</td><td>2229</td><td>22291</td><td>Industri Barang Plastik Lembaran </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>269</td><td>222</td><td>2229</td><td>22292</td><td>Industri Perlengkapan Dan Peralatan Rumah Tangga (Tidak Termasuk Furnitur) </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>270</td><td>222</td><td>2229</td><td>22293</td><td>Industri Barang Dan Peralatan Teknik/Industri Dari Plastik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>271</td><td>222</td><td>2229</td><td>22299</td><td>Industri Barang Plastik Lainnya Ytdl </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>272</td><td>231</td><td>2311</td><td>23111</td><td>Industri Kaca Lembaran </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>273</td><td>231</td><td>2311</td><td>23112</td><td>Industri Kaca Pengaman </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>274</td><td>231</td><td>2311</td><td>23119</td><td>Industri Kaca Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>275</td><td>231</td><td>2312</td><td>23121</td><td>Industri Perlengkapan Dan Peralatan Rumah Tangga Dari Kaca </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>276</td><td>231</td><td>2312</td><td>23122</td><td>Industri Alat-Alat Laboratorium Non Klinis, Farmasi Dan Kesehatan Dari Kaca </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>277</td><td>231</td><td>2312</td><td>23123</td><td>Industri Kemasan Dari Kaca </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>278</td><td>231</td><td>2312</td><td>23124</td><td>Industri Alat Laboratorium Klinis Dari Kaca </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>279</td><td>231</td><td>2312</td><td>23129</td><td>Industri Barang Lainnya Dari Kaca </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>280</td><td>239</td><td>2391</td><td>23911</td><td>Industri Bata, Mortar, Semen, Dan Sejenisnya Yang Tahan Api </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>281</td><td>239</td><td>2391</td><td>23919</td><td>Industri Barang Tahan Api Dari Tanah Liat/Keramik Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>282</td><td>239</td><td>2392</td><td>23921</td><td>Industri Batu Bata Dari Tanah Liat/Keramik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>283</td><td>239</td><td>2392</td><td>23922</td><td>Industri Genteng Dari Tanah Liat/Keramik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>284</td><td>239</td><td>2392</td><td>23923</td><td>Industri Peralatan Saniter Dari Porselen </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>285</td><td>239</td><td>2392</td><td>23929</td><td>Industri Bahan Bangunan Dari Tanah Liat/Keramik Bukan Batu Bata Dan Genteng </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>286</td><td>239</td><td>2393</td><td>23931</td><td>Industri Perlengkapan Rumah Tangga Dari Porselen </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>287</td><td>239</td><td>2393</td><td>23932</td><td>Industri Perlengkapan Rumah Tangga Dari Tanah Liat/Keramik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>288</td><td>239</td><td>2393</td><td>23933</td><td>Industri Alat Laboratorium Dan Alat Listrik/Teknik Dari Porselen </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>289</td><td>239</td><td>2393</td><td>23939</td><td>Industri Barang Tanah Liat/Keramik Dan Porselen Lainnya Bukan Bahan Bangunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>290</td><td>239</td><td>2394</td><td>23941</td><td>Industri Semen </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>291</td><td>239</td><td>2394</td><td>23942</td><td>Industri Kapur </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>292</td><td>239</td><td>2394</td><td>23943</td><td>Industri Gips </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>293</td><td>239</td><td>2395</td><td>23951</td><td>Industri Barang Dari Semen </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>294</td><td>239</td><td>2395</td><td>23952</td><td>Industri Barang Dari Kapur </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>295</td><td>239</td><td>2395</td><td>23953</td><td>Industri Barang Dari Semen Dan Kapur Untuk Konstruksi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>296</td><td>239</td><td>2395</td><td>23954</td><td>Industri Barang Dari Gips Untuk Konstruksi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>297</td><td>239</td><td>2395</td><td>23955</td><td>Industri Barang Dari Asbes Untuk Keperluan Bahan Bangunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>298</td><td>239</td><td>2395</td><td>23956</td><td>Industri Barang Dari Asbes Untuk Keperluan Industri</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>299</td><td>239</td><td>2395</td><td>23957</td><td>Industri Mortar Atau Beton Siap Pakai </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>300</td><td>239</td><td>2395</td><td>23959</td><td>Industri Barang Dari Semen, Kapur, Gips Dan Asbes Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>301</td><td>239</td><td>2396</td><td>23961</td><td>Industri Barang Dari Marmer Dan Granit Untuk Keperluan Rumah Tangga Dan Pajangan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>302</td><td>239</td><td>2396</td><td>23962</td><td>Industri Barang Dari Marmer Dan Granit Untuk Keperluan Bahan Bangunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>303</td><td>239</td><td>2396</td><td>23963</td><td>Industri Barang Dari Batu Untuk Keperluan Rumah Tangga, Pajangan, Dan Bahan Bangunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>304</td><td>239</td><td>2396</td><td>23969</td><td>Industri Barang Dari Marmer, Granit Dan Batu Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>305</td><td>239</td><td>2399</td><td>23990</td><td>Industri Barang Galian Bukan Logam Lainnya Ytdl </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>306</td><td>241</td><td>2410</td><td>24101</td><td>Industri Besi Dan Baja Dasar (Iron And Steel Making)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>307</td><td>241</td><td>2410</td><td>24102</td><td>Industri Penggilingan Baja (Steel Rolling) </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>308</td><td>241</td><td>2410</td><td>24103</td><td>Industri Pipa Dan Sambungan Pipa Dari Baja Dan Besi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>309</td><td>242</td><td>2420</td><td>24201</td><td>Industri Pembuatan Logam Dasar Mulia </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>310</td><td>242</td><td>2420</td><td>24202</td><td>Industri Pembuatan Logam Dasar Bukan Besi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>311</td><td>242</td><td>2420</td><td>24203</td><td>Industri Penggilingan Logam Bukan Besi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>312</td><td>242</td><td>2420</td><td>24204</td><td>Industri Ekstrusi Logam Bukan Besi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>313</td><td>242</td><td>2420</td><td>24205</td><td>Industri Pipa Dan Sambungan Pipa Dari Logam Bukan Besi Dan Baja </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>314</td><td>242</td><td>2420</td><td>24206</td><td>Industri Pengolahan Uranium Dan Bijih Uranium </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>315</td><td>243</td><td>2431</td><td>24310</td><td>Industri Pengecoran Besi Dan Baja </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>316</td><td>243</td><td>2432</td><td>24320</td><td>Industri Pengecoran Logam Bukan Besi Dan Baja </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>317</td><td>251</td><td>2511</td><td>25111</td><td>Industri Barang Dari Logam Bukan Aluminium Siap Pasang Untuk Bangunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>318</td><td>251</td><td>2511</td><td>25112</td><td>Industri Barang Dari Logam Aluminium Siap Pasang Untuk Bangunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>319</td><td>251</td><td>2511</td><td>25113</td><td>Industri Konstruksi Berat Siap Pasang Dari Baja Untuk Bangunan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>320</td><td>251</td><td>2511</td><td>25119</td><td>Industri Barang Dari Logam Siap Pasang Untuk Konstruksi Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>321</td><td>251</td><td>2512</td><td>25120</td><td>Industri Tangki, Tandon Air Dan Wadah Dari Logam </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>322</td><td>251</td><td>2513</td><td>25130</td><td>Industri Generator Uap, Bukan Ketel Pemanas </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>323</td><td>252</td><td>2520</td><td>25200</td><td>Industri Senjata dan Amunisi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>324</td><td>259</td><td>2591</td><td>25910</td><td>Industri Penempaan, Pengepresan, Pencetakan Dan Pembentukan Logam; Metalurgi Bubuk </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>325</td><td>259</td><td>2592</td><td>25920</td><td>Jasa Industri Untuk Berbagai Pengerjaan Khusus Logam Dan Barang Dari Logam </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>326</td><td>259</td><td>2593</td><td>25931</td><td>Industri Alat Potong Dan Perkakas Tangan Untuk Pertanian </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>327</td><td>259</td><td>2593</td><td>25932</td><td>Industri Alat Potong Dan Perkakas Tangan Pertukangan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>328</td><td>259</td><td>2593</td><td>25933</td><td>Industri Alat Potong Dan Perkakas Tangan Yang Digunakan Dalam Rumah Tangga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>329</td><td>259</td><td>2593</td><td>25934</td><td>Industri Peralatan Umum </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>330</td><td>259</td><td>2594</td><td>25940</td><td>Industri Ember, Kaleng, Drum Dan Wadah Sejenis Dari Logam </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>331</td><td>259</td><td>2595</td><td>25951</td><td>Industri Barang Dari Kawat </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>332</td><td>259</td><td>2595</td><td>25952</td><td>Industri Paku, Mur Dan Baut </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>333</td><td>259</td><td>2599</td><td>25991</td><td>Industri Brankas, Filling Kantor Dan Sejenisnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>334</td><td>259</td><td>2599</td><td>25992</td><td>Industri Peralatan Dapur Dan Peralatan Meja Dari Logam </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>335</td><td>259</td><td>2599</td><td>25993</td><td>Industri Keperluan Rumah Tangga Dari Logam Bukan Peralatan Dapur Dan Peralatan Meja </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>336</td><td>259</td><td>2599</td><td>25994</td><td>Industri Pembuatan Profil </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>337</td><td>259</td><td>2599</td><td>25995</td><td>Industri Lampu Dari Logam </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>338</td><td>259</td><td>2599</td><td>25999</td><td>Industri Barang Logam Lainnya Ytdl </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>339</td><td>261</td><td>2611</td><td>26110</td><td>Industri Tabung Elektron Dan Konektor Elektronik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>340</td><td>261</td><td>2612</td><td>26120</td><td>Industri Semi Konduktor Dan Komponen Elektronik Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>341</td><td>262</td><td>2621</td><td>26210</td><td>Industri Komputer Dan/Atau Perakitan Komputer </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>342</td><td>262</td><td>2622</td><td>26220</td><td>Industri Perlengkapan Komputer </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>343</td><td>263</td><td>2631</td><td>26310</td><td>Industri Peralatan Telepon Dan Faksimili </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>344</td><td>263</td><td>2632</td><td>26320</td><td>Industri Peralatan Komunikasi Tanpa Kabel (Wireless)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>345</td><td>263</td><td>2639</td><td>26391</td><td>Industri Kartu Cerdas (Smart Card) </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>346</td><td>263</td><td>2639</td><td>26399</td><td>Industri Peralatan Komunikasi Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>347</td><td>264</td><td>2641</td><td>26410</td><td>Industri Televisi Dan/Atau Perakitan Televisi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>348</td><td>264</td><td>2642</td><td>26420</td><td>Industri Peralatan Perekam, Penerima Dan Pengganda Audio Dan Video, Bukan Industri Televisi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>349</td><td>264</td><td>2649</td><td>26490</td><td>Industri Peralatan Audio Dan Video Elektronik Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>350</td><td>265</td><td>2651</td><td>26511</td><td>Industri Alat Ukur Dan Alat Uji Manual </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>351</td><td>265</td><td>2651</td><td>26512</td><td>Industri Alat Ukur Dan Alat Uji Elektrik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>352</td><td>265</td><td>2651</td><td>26513</td><td>Industri Alat Ukur Dan Alat Uji Elektronik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>353</td><td>265</td><td>2651</td><td>26514</td><td>Industri Alat Uji Dalam Proses Industri </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>354</td><td>265</td><td>2652</td><td>26520</td><td>Industri Alat Ukur Waktu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>355</td><td>266</td><td>2660</td><td>26601</td><td>Industri Peralatan Iradiasi/Sinar X, Perlengkapan Dan Sejenisnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>356</td><td>266</td><td>2660</td><td>26602</td><td>Industri Peralatan Elektromedikal Dan Elektroterapi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>357</td><td>267</td><td>2671</td><td>26710</td><td>Industri Peralatan Fotografi dan Instrumen Optik Bukan Kaca Mata</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>358</td><td>267</td><td>2679</td><td>26791</td><td>Industri Kamera Cinematografi Proyektor Dan Perlengkapannya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>359</td><td>267</td><td>2679</td><td>26792</td><td>Industri Teropong Dan Instrumen Optik Bukan Kaca Mata </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>360</td><td>268</td><td>2680</td><td>26800</td><td>Industri Media Magnetik dan Media Optik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>361</td><td>271</td><td>2711</td><td>27111</td><td>Industri Motor Listrik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>362</td><td>271</td><td>2711</td><td>27112</td><td>Industri Mesin Pembangkit Listrik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>363</td><td>271</td><td>2711</td><td>27113</td><td>Industri Pengubah Tegangan (Transformator), Pengubah Arus (Rectifier) Dan Pengontrol Tegangan (Voltage Stabilizer) </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>364</td><td>271</td><td>2712</td><td>27120</td><td>Industri Peralatan Pengontrol Dan Pendistribusian Listrik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>365</td><td>272</td><td>2720</td><td>27201</td><td>Industri Batu Baterai </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>366</td><td>272</td><td>2720</td><td>27202</td><td>Industri Akumulator Listrik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>367</td><td>272</td><td>2720</td><td>27203</td><td>Industri Baterai Untuk Kendaraan Bermotor Listrik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>368</td><td>273</td><td>2731</td><td>27310</td><td>Industri Kabel Serat Optik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>369</td><td>273</td><td>2732</td><td>27320</td><td>Industri Kabel Listrik Dan Elektronik Lainnya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>370</td><td>273</td><td>2733</td><td>27330</td><td>Industri Perlengkapan Kabel </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>371</td><td>274</td><td>2740</td><td>27401</td><td>Industri Bola Lampu Pijar, Lampu Penerangan Terpusat Dan Lampu Ultra Violet </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>372</td><td>274</td><td>2740</td><td>27402</td><td>Industri Lampu Tabung Gas (Lampu Pembuang Listrik)</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>373</td><td>274</td><td>2740</td><td>27403</td><td>Industri Peralatan Penerangan Untuk Alat Transportasi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>374</td><td>274</td><td>2740</td><td>27404</td><td>Industri Lampu Led </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>375</td><td>274</td><td>2740</td><td>27409</td><td>Industri Peralatan Penerangan Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>376</td><td>275</td><td>2751</td><td>27510</td><td>Industri Peralatan Listrik Rumah Tangga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>377</td><td>275</td><td>2752</td><td>27520</td><td>Industri Peralatan Elektrotermal Rumah Tangga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>378</td><td>275</td><td>2753</td><td>27530</td><td>Industri Peralatan Pemanas Dan Masak Bukan Listrik Rumah Tangga </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>379</td><td>279</td><td>2790</td><td>27900</td><td>Industri Peralatan Listrik Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>380</td><td>281</td><td>2811</td><td>28111</td><td>Industri Mesin Uap, Turbin Dan Kincir </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>381</td><td>281</td><td>2811</td><td>28112</td><td>Industri Motor Pembakaran Dalam </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>382</td><td>281</td><td>2811</td><td>28113</td><td>Industri Komponen Dan Suku Cadang Mesin Dan Turbin</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>383</td><td>281</td><td>2812</td><td>28120</td><td>Industri Peralatan Tenaga Zat Cair Dan Gas </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>384</td><td>281</td><td>2813</td><td>28130</td><td>Industri Pompa Lainnya, Kompresor, Kran Dan Klep/Katup </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>385</td><td>281</td><td>2814</td><td>28140</td><td>Industri Bearing, Roda Gigi Dan Elemen Penggerak Mesin </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>386</td><td>281</td><td>2815</td><td>28151</td><td>Industri Oven, Perapian Dan Tungku Pembakar Sejenis Yang Tidak Menggunakan Arus Listrik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>387</td><td>281</td><td>2815</td><td>28152</td><td>Industri Oven, Perapian Dan Tungku Pembakar Sejenis Yang Menggunakan Arus Listrik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>388</td><td>281</td><td>2816</td><td>28160</td><td>Industri Alat Pengangkat Dan Pemindah </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>389</td><td>281</td><td>2817</td><td>28171</td><td>Industri Mesin Kantor Dan Akuntansi Manual </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>390</td><td>281</td><td>2817</td><td>28172</td><td>Industri Mesin Kantor Dan Akuntansi Elektrik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>391</td><td>281</td><td>2817</td><td>28173</td><td>Industri Mesin Kantor Dan Akuntansi Elektronik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>392</td><td>281</td><td>2817</td><td>28174</td><td>Industri Mesin Fotocopi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>393</td><td>281</td><td>2817</td><td>28179</td><td>Industri Mesin Dan Peralatan Kantor Lainnya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>394</td><td>281</td><td>2818</td><td>28180</td><td>Industri Perkakas Tangan Yang Digerakkan Tenaga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>395</td><td>281</td><td>2819</td><td>28191</td><td>Industri Mesin Untuk Pembungkus, Pembotolan Dan Pengalengan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>396</td><td>281</td><td>2819</td><td>28192</td><td>Industri Mesin Timbangan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>397</td><td>281</td><td>2819</td><td>28193</td><td>Industri Mesin Pendingin </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>398</td><td>281</td><td>2819</td><td>28199</td><td>Industri Mesin Untuk Keperluan Umum Lainnya Ytdl </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>399</td><td>282</td><td>2821</td><td>28210</td><td>Industri Mesin Pertanian Dan Kehutanan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>400</td><td>282</td><td>2822</td><td>28221</td><td>Industri Mesin Dan Perkakas Mesin Untuk Pengerjaan Logam </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>401</td><td>282</td><td>2822</td><td>28222</td><td>Industri Mesin Dan Perkakas Mesin Untuk Pengerjaan Kayu </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>402</td><td>282</td><td>2822</td><td>28223</td><td>Industri Mesin Dan Perkakas Mesin Untuk Pengerjaan Bahan Bukan Logam Dan Kayu </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>403</td><td>282</td><td>2822</td><td>28224</td><td>Industri Mesin Dan Perkakas Mesin Untuk Pengelasan Yang Menggunakan Arus Listrik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>404</td><td>282</td><td>2823</td><td>28230</td><td>Industri Mesin Metalurgi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>405</td><td>282</td><td>2824</td><td>28240</td><td>Industri Mesin Penambangan, Penggalian Dan Konstruksi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>406</td><td>282</td><td>2825</td><td>28250</td><td>Industri Mesin Pengolahan Makanan, Minuman Dan Tembakau </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>407</td><td>282</td><td>2826</td><td>28261</td><td>Industri Kabinet Mesin Jahit </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>408</td><td>282</td><td>2826</td><td>28262</td><td>Industri Mesin Jahit Serta Mesin Cuci Dan Mesin Pengering Untuk Keperluan Niaga </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>409</td><td>282</td><td>2826</td><td>28263</td><td>Industri Mesin Tekstil </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>410</td><td>282</td><td>2826</td><td>28264</td><td>Industri Jarum Mesin Jahit, Rajut, Bordir Dan Sejenisnya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>411</td><td>282</td><td>2826</td><td>28265</td><td>Industri Mesin Penyiapan Dan Pembuatan Produk Kulit</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>412</td><td>282</td><td>2829</td><td>28291</td><td>Industri Mesin Percetakan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>413</td><td>282</td><td>2829</td><td>28292</td><td>Industri Mesin Pabrik Kertas </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>414</td><td>282</td><td>2829</td><td>28299</td><td>Industri Mesin Keperluan Khusus Lainnya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>415</td><td>291</td><td>2910</td><td>29101</td><td>Industri Kendaraan Bermotor Roda Empat Atau Lebih</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>416</td><td>291</td><td>2910</td><td>29102</td><td>Industri Kendaraan Multiguna Pedesaan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>417</td><td>292</td><td>2920</td><td>29200</td><td>Industri Karoseri Kendaraan Bermotor Roda Empat Atau Lebih Dan Industri Trailer Dan Semi Trailer </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>418</td><td>293</td><td>2930</td><td>29300</td><td>Industri Suku Cadang Dan Aksesori Kendaraan Bermotor Roda Empat Atau Lebih </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>419</td><td>301</td><td>3011</td><td>30111</td><td>Industri Kapal dan Perahu</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>420</td><td>301</td><td>3011</td><td>30112</td><td>Industri Bangunan Lepas Pantai dan Bangunan Terapung</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>421</td><td>301</td><td>3011</td><td>30113</td><td>Industri Peralatan, Perlengkapan dan Bagian Kapal</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>422</td><td>301</td><td>3012</td><td>30120</td><td>Industri Pembuatan Kapal dan Perahu Untuk Tujuan Wisata atau Rekreasi dan Olahraga</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>423</td><td>302</td><td>3020</td><td>30200</td><td>Industri Lokomotif dan Gerbong Kereta</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>424</td><td>303</td><td>3030</td><td>30300</td><td>Industri Pesawat Terbang dan Perlenkapannya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>425</td><td>304</td><td>3040</td><td>30400</td><td>Industri Kendaraan Perang</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>426</td><td>309</td><td>3091</td><td>30911</td><td>Industri Sepeda Motor Roda Dua Dan Tiga </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>427</td><td>309</td><td>3091</td><td>30912</td><td>Industri Komponen Dan Perlengkapan Sepeda Motor Roda Dua Dan Tiga </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>428</td><td>309</td><td>3092</td><td>30921</td><td>Industri Sepeda Dan Kursi Roda Termasuk Becak </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>429</td><td>309</td><td>3092</td><td>30922</td><td>Industri Perlengkapan Sepeda Dan Kursi Roda Termasuk Becak </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>430</td><td>309</td><td>3099</td><td>30990</td><td>Industri Alat Angkutan Lainnya Ytdl </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>431</td><td>310</td><td>3100</td><td>31001</td><td>Industri Furnitur Dari Kayu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>432</td><td>310</td><td>3100</td><td>31002</td><td>Industri Furnitur Dari Rotan Dan Atau Bambu </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>433</td><td>310</td><td>3100</td><td>31003</td><td>Industri Furnitur Dari Plastik </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>434</td><td>310</td><td>3100</td><td>31004</td><td>Industri Furnitur Dari Logam </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>435</td><td>310</td><td>3100</td><td>31009</td><td>Industri Furnitur Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>436</td><td>321</td><td>3211</td><td>32111</td><td>Industri Permata </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>437</td><td>321</td><td>3211</td><td>32112</td><td>Industri Barang Perhiasan Dari Logam Mulia Untuk Keperluan Pribadi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>438</td><td>321</td><td>3211</td><td>32113</td><td>Industri Barang Perhiasan Dari Logam Mulia Bukan Untuk Keperluan Pribadi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>439</td><td>321</td><td>3211</td><td>32114</td><td>Industri Barang Dari Logam Mulia Untuk Keperluan Teknik Dan Atau Laboratorium </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>440</td><td>321</td><td>3211</td><td>32115</td><td>Industri Perhiasan Mutiara </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>441</td><td>321</td><td>3211</td><td>32119</td><td>Industri Barang Lainnya Dari Logam Mulia </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>442</td><td>321</td><td>3212</td><td>32120</td><td>Industri Perhiasan Imitasi Dan Barang Sejenis </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>443</td><td>322</td><td>3220</td><td>32201</td><td>Industri Alat Musik Tradisional </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>444</td><td>322</td><td>3220</td><td>32202</td><td>Industri Alat Musik Bukan Tradisional </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>445</td><td>323</td><td>3230</td><td>32300</td><td>Industri Alat Olahraga </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>446</td><td>324</td><td>3240</td><td>32401</td><td>Industri Alat Permainan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>447</td><td>324</td><td>3240</td><td>32402</td><td>Industri Mainan Anak-Anak </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>448</td><td>325</td><td>3250</td><td>32501</td><td>Industri Furnitur Untuk Operasi, Perawatan Kedokteran Dan Kedokteran Gigi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>449</td><td>325</td><td>3250</td><td>32502</td><td>Industri Peralatan Kedokteran Dan Kedokteran Gigi, Perlengkapan Orthopaedic Dan Prosthetic </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>450</td><td>325</td><td>3250</td><td>32503</td><td>Industri Kaca Mata </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>451</td><td>325</td><td>3250</td><td>32509</td><td>Industri Peralatan Kedokteran Dan Kedokteran Gigi Serta Perlengkapan Lainnya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>452</td><td>329</td><td>3290</td><td>32901</td><td>Industri Alat Tulis Dan Gambar Termasuk Perlengkapannya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>453</td><td>329</td><td>3290</td><td>32902</td><td>Industri Pita Mesin Tulis/Gambar </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>454</td><td>329</td><td>3290</td><td>32903</td><td>Industri Kerajinan Ytdl </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>455</td><td>329</td><td>3290</td><td>32904</td><td>Industri Peralatan Untuk Pelindung Keselamatan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>456</td><td>329</td><td>3290</td><td>32905</td><td>Industri Serat Sabut Kelapa </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>457</td><td>329</td><td>3290</td><td>32906</td><td>Industri Produksi Radiosotop</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>458</td><td>329</td><td>3290</td><td>32907</td><td>Industri Fabrikasi Elemen Bakar  Uranium</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>459</td><td>329</td><td>3290</td><td>32909</td><td>Industri Pengolahan Lainnya Ytdl </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>460</td><td>331</td><td>3311</td><td>33111</td><td>Reparasi Produk Logam Siap Pasang Untuk Bangunan, Tangki, Tandon Air Dan Generator Uap </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>461</td><td>331</td><td>3311</td><td>33112</td><td>Reparasi Produk Senjata dan Amunisi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>462</td><td>331</td><td>3311</td><td>33119</td><td>Reparasi Produk Logam Pabrikasi Lainnya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>463</td><td>331</td><td>3312</td><td>33121</td><td>Reparasi Mesin Untuk Keperluan Umum </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>464</td><td>331</td><td>3312</td><td>33122</td><td>Reparasi Mesin Untuk Keperluan Khusus </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>465</td><td>331</td><td>3313</td><td>33131</td><td>Reparasi Alat Ukur, Alat Uji Dan Peralatan Navigasi Dan Pengontrol </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>466</td><td>331</td><td>3313</td><td>33132</td><td>Reparasi Peralatan Iradiasi, Elektromedis Dan Elektroterapi </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>467</td><td>331</td><td>3313</td><td>33133</td><td>Reparasi Peralatan Fotografi Dan Optik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>468</td><td>331</td><td>3314</td><td>33141</td><td>Reparasi Motor Listrik, Generator Dan Transformator</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>469</td><td>331</td><td>3314</td><td>33142</td><td>Reparasi Baterai Dan Akumulator Listrik </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>470</td><td>331</td><td>3314</td><td>33149</td><td>Reparasi Peralatan Listrik Lainnya </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>471</td><td>331</td><td>3315</td><td>33151</td><td>Reparasi Kapal, Perahu dan Bangunan Terapung</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>472</td><td>331</td><td>3315</td><td>33152</td><td>Reparasi Lokomotif dan Gerbong Kereta</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>473</td><td>331</td><td>3315</td><td>33153</td><td>Reparasi Pesawat Terbang</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>474</td><td>331</td><td>3315</td><td>33159</td><td>Reparasi Alat Angkutan Lainnya, Bukan Kendaraan Bermotor </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>475</td><td>331</td><td>3319</td><td>33190</td><td>Reparasi Peralatan Lainnya </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>476</td><td>332</td><td>3320</td><td>33200</td><td>Instalasi/Pemasangan Mesin dan Peralatan Industri</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>&nbsp;</td><td>Pengadaan Listrik, Gas, Uap/Air Panas Dan Udara Dingin</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>1</td><td>351</td><td>3511</td><td>35111</td><td>Pembangkit Tenaga Listrik</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>2</td><td>351</td><td>3511</td><td>35112</td><td>Transmisi Tenaga Listrik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>3</td><td>351</td><td>3511</td><td>35113</td><td>Distribusi Tenaga Listrik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>4</td><td>351</td><td>3511</td><td>35114</td><td>Penjualan Tenaga Listrik</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>5</td><td>351</td><td>3511</td><td>35115</td><td>Pembangkit, Transmisi, Distribusi dan Penjualan Tenaga Listrik Dalam Satu Kesatuan Usaha</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>6</td><td>351</td><td>3511</td><td>35116</td><td>Pembangkit, Transmisi, dan Penjualan Tenaga Listrik Dalam Satu Kesatuan Usaha</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>7</td><td>351</td><td>3511</td><td>35117</td><td>Pembangkit, Distribusi, dan Penjualan Tenaga Listrik Dalam Satu Kesatuan Usaha</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>8</td><td>351</td><td>3511</td><td>35118</td><td>Distribusi, dan Penjualan Tenaga Listrik Dalam Satu Kesatuan Usaha</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>9</td><td>351</td><td>3512</td><td>35121</td><td>Pengoperasian Instalasi Penyediaan Tenaga Listrik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>10</td><td>351</td><td>3512</td><td>35122</td><td>Pengoperasian Instalasi Pemanfaatan Tenaga Listrik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>11</td><td>351</td><td>3512</td><td>35129</td><td>Aktivitas penunjang tenaga listrik lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>12</td><td>352</td><td>3520</td><td>35201</td><td>Pengadaan Gas Alam Dan Buatan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>13</td><td>352</td><td>3520</td><td>35202</td><td>Distribusi Gas Alam Dan Buatan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>14</td><td>352</td><td>3520</td><td>35203</td><td>Pengadaan Gas Bio</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>15</td><td>353</td><td>3530</td><td>35301</td><td>Pengadaan Uap/Air Panas Dan Udara Dingin</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>16</td><td>353</td><td>3530</td><td>35302</td><td>Produksi Es</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>&nbsp;</td><td>Treatment Air & Air Limbah, Treatment & Pemulihan Material Sampah, Aktivitas Remediasi</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>1</td><td>360</td><td>3600</td><td>36001</td><td>Penampungan, Penjernihan dan Penyaluran Air Minum</td><td>pembatasan intensitas ruang (luas), penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>2</td><td>360</td><td>3600</td><td>36002</td><td>Penampungan dan Penyaluran Air Baku</td><td>pembatasan intensitas ruang (luas), penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>3</td><td>360</td><td>3600</td><td>36003</td><td>Aktivitas Penunjang Treatment Air</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>4</td><td>370</td><td>3701</td><td>37011</td><td>Pengumpulan Air Limbah Tidak Berbahaya</td><td>pembatasan intensitas ruang (luas), penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>5</td><td>370</td><td>3701</td><td>37012</td><td>Pengumpulan Air Limbah Berbahaya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>6</td><td>370</td><td>3702</td><td>37021</td><td>Treatment dan Pembuangan Air Limbah Tidak Berbahaya</td><td>pembatasan intensitas ruang (luas), penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>7</td><td>370</td><td>3702</td><td>37022</td><td>Treatment dan Pembuangan Air Limbah Berbahaya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>8</td><td>381</td><td>3811</td><td>38110</td><td>Pengumpulan limbah dan sampah tidak berbahaya</td><td>pembatasan intensitas ruang (luas), penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>9</td><td>381</td><td>3812</td><td>38120</td><td>Pengumpulan Limbah Berbahaya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>10</td><td>382</td><td>3821</td><td>38211</td><td>Treatment dan Pembuangan Limbah dan Sampah Tidak Berbahaya</td><td>pembatasan intensitas ruang (luas), penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>11</td><td>382</td><td>3821</td><td>38212</td><td>Produksi Kompos Sampah Organik</td><td>pembatasan intensitas ruang (luas), penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>12</td><td>382</td><td>3822</td><td>38220</td><td>Treatment dan Pembuangan Limbah Berbahaya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>13</td><td>383</td><td>3830</td><td>38301</td><td>Pemulihan Material Barang Logam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>14</td><td>383</td><td>3830</td><td>38302</td><td>Pemulihan Material Barang Bukan Logam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>15</td><td>390</td><td>3900</td><td>39000</td><td>Aktivitas Remediasi dan Pengelolaan Limbah dan Sampah Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>&nbsp;</td><td>Konstruksi</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>1</td><td>410</td><td>4101</td><td>41011</td><td>Konstruksi Gedung Hunian</td><td>Diizinkan</td></tr>
+ <tr><td>2</td><td>410</td><td>4101</td><td>41012</td><td>Konstruksi Gedung Perkantoran </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>3</td><td>410</td><td>4101</td><td>41013</td><td>Konstruksi Gedung Industri</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>4</td><td>410</td><td>4101</td><td>41014</td><td>Konstruksi Gedung Perbelanjaan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>5</td><td>410</td><td>4101</td><td>41015</td><td>Konstruksi Gedung Kesehatan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>6</td><td>410</td><td>4101</td><td>41016</td><td>Konstruksi Gedung Pendidikan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>7</td><td>410</td><td>4101</td><td>41017</td><td>Konstruksi Gedung Penginapan </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>8</td><td>410</td><td>4101</td><td>41018</td><td>Konstruksi Gedung Tempat Hiburan dan Olahraga</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>9</td><td>410</td><td>4101</td><td>41019</td><td>Konstruksi Gedung Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>10</td><td>410</td><td>4102</td><td>41020</td><td>Jasa Pekerjaan Konstruksi Prapabrikasi Bangunan Gedung</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>11</td><td>421</td><td>4210</td><td>42101</td><td>Konstruksi Bangunan Sipil Jalan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>12</td><td>421</td><td>4210</td><td>42102</td><td>Konstruksi Bangunan Sipil Jembatan, Jalan Layang, Fly Over, dan Underpass</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>13</td><td>421</td><td>4210</td><td>42103</td><td>Konstruksi Jalan Rel</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>14</td><td>421</td><td>4210</td><td>42104</td><td>Konstruksi Terowongan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>15</td><td>422</td><td>4220</td><td>42201</td><td>Konstruksi Jaringan Irigasi dan Drainase</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>16</td><td>422</td><td>4220</td><td>42202</td><td>Konstruksi Bangunan Sipil Pengolahan Air Bersih</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>17</td><td>422</td><td>4220</td><td>42203</td><td>Konstruksi Bangunan Sipil Prasarana dan Sarana Sistem Pengolahan Limbah Padat, Cair, dan Gas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>18</td><td>422</td><td>4220</td><td>42204</td><td>Konstruksi Bangunan Sipil Elektrikal </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>19</td><td>422</td><td>4220</td><td>42205</td><td>Konstruksi Bangunan Sipil Telekomunikasi untuk Prasarana Transportasi </td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>20</td><td>422</td><td>4220</td><td>42206</td><td>Konstruksi Sentral Telekomunikasi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>21</td><td>422</td><td>4220</td><td>42207</td><td>Pembuatan/pengeboran Sumur Air Tanah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>22</td><td>422</td><td>4220</td><td>42209</td><td>Konstruksi Jaringan Irigasi, Komunikasi, dan Limbah Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>23</td><td>429</td><td>4291</td><td>42911</td><td>Konstruksi Bangunan Prasarana Sumber Daya Air</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>24</td><td>429</td><td>4291</td><td>42912</td><td>Konstruksi Bangunan Pelabuhan Bukan Perikanan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>25</td><td>429</td><td>4291</td><td>42913</td><td>Konstruksi Bangunan Pelabuhan Perikanan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>26</td><td>429</td><td>4291</td><td>42914</td><td>Pengerukan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>27</td><td>429</td><td>4291</td><td>42915</td><td>Konstruksi Bangunan Sipil Minyak dan Gas Bumi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>28</td><td>429</td><td>4291</td><td>42916</td><td>Konstruksi Bangunan Sipil Pertambangan </td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>29</td><td>429</td><td>4291</td><td>42917</td><td>Konstruksi Bangunan Sipil Panas Bumi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>30</td><td>429</td><td>4291</td><td>42918</td><td>Konstruksi Bangunan Sipil Fasiltas Olah Raga</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>31</td><td>429</td><td>4291</td><td>42919</td><td>Konstruksi Bangunan Sipil Lainnya Ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>32</td><td>429</td><td>4292</td><td>42921</td><td>Konstruksi Reservoir Pembangkit Listrik Tenaga Air</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>33</td><td>429</td><td>4292</td><td>42922</td><td>Jasa Pekerjaan Konstruksi Pelindung Pantai</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>34</td><td>429</td><td>4292</td><td>42923</td><td>Konstruksi Bangunan Sipil Fasilitas Pengolahan Produk Kimia, Petrokimia, Farmasi, dan Industri Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>35</td><td>429</td><td>4292</td><td>42924</td><td>Konstruksi Bangunan Sipil Fasilitas Militer dan Peluncuran Satelit</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>36</td><td>429</td><td>4292</td><td>42929</td><td>Konstruksi Khusus Bangunan Sipil Lainnya Ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>37</td><td>429</td><td>4293</td><td>42930</td><td>Jasa Pekerjaan Konstruksi Prapabrikasi Bangunan Sipil</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>38</td><td>431</td><td>4311</td><td>43110</td><td>Pembongkaran</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>39</td><td>431</td><td>4312</td><td>43120</td><td>Penyiapan Lahan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>40</td><td>432</td><td>4321</td><td>43211</td><td>Instalasi Listrik</td><td>Diizinkan</td></tr>
+ <tr><td>41</td><td>432</td><td>4321</td><td>43212</td><td>Instalasi Telekomunikasi</td><td>Diizinkan</td></tr>
+ <tr><td>42</td><td>432</td><td>4321</td><td>43213</td><td>Instalasi Elektronika</td><td>Diizinkan</td></tr>
+ <tr><td>43</td><td>432</td><td>4321</td><td>43214</td><td>Jasa Instalasi Konstruksi Navigasi Laut, Sungai, dan Udara</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>44</td><td>432</td><td>4321</td><td>43215</td><td>Instalasi Sinyal Dan Telekomunikasi Kereta Api</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>45</td><td>432</td><td>4321</td><td>43216</td><td>Instalasi Sinyal Dan Rambu-rambu Jalan Raya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>46</td><td>432</td><td>4322</td><td>43221</td><td>Instalasi Saluran Air (Plambing)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>47</td><td>432</td><td>4322</td><td>43222</td><td>Instalasi Pemanas Dan Geotermal</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>48</td><td>432</td><td>4322</td><td>43223</td><td>Instalasi Minyak Dan Gas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>49</td><td>432</td><td>4322</td><td>43224</td><td>Instalasi Pendingin Dan Ventilasi Udara</td><td>Diizinkan</td></tr>
+ <tr><td>50</td><td>432</td><td>4329</td><td>43291</td><td>Instalasi Mekanikal</td><td>Diizinkan</td></tr>
+ <tr><td>51</td><td>432</td><td>4329</td><td>43292</td><td>Instalasi Meteorologi, Klimatologi Dan Geofisika</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>52</td><td>432</td><td>4329</td><td>43293</td><td>Instalasi Fasilitas Sumber Radiasi Pengion</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>53</td><td>432</td><td>4329</td><td>43294</td><td>Instalasi Nuklir</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>54</td><td>432</td><td>4329</td><td>43299</td><td>Instalasi Konstruksi Lainnya Ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>55</td><td>433</td><td>4330</td><td>43301</td><td>Pengerjaan Pemasangan Kaca Dan Alumunium</td><td>Diizinkan</td></tr>
+ <tr><td>56</td><td>433</td><td>4330</td><td>43302</td><td>Pengerjaan Lantai, Dinding, Peralatan Saniter Dan Plafon</td><td>Diizinkan</td></tr>
+ <tr><td>57</td><td>433</td><td>4330</td><td>43303</td><td>Pengecatan</td><td>Diizinkan</td></tr>
+ <tr><td>58</td><td>433</td><td>4330</td><td>43304</td><td>Dekorasi Interior</td><td>Diizinkan</td></tr>
+ <tr><td>59</td><td>433</td><td>4330</td><td>43305</td><td>Dekorasi Eksterior</td><td>Diizinkan</td></tr>
+ <tr><td>60</td><td>433</td><td>4330</td><td>43309</td><td>Penyelesaian Konstruksi Bangunan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>61</td><td>439</td><td>4390</td><td>43901</td><td>Pemasangan Pondasi Dan Tiang Pancang</td><td>Diizinkan</td></tr>
+ <tr><td>62</td><td>439</td><td>4390</td><td>43902</td><td>Pemasangan Perancah (Steiger)</td><td>Diizinkan</td></tr>
+ <tr><td>63</td><td>439</td><td>4390</td><td>43903</td><td>Pemasangan Rangka dan Atap/Roof Covering</td><td>Diizinkan</td></tr>
+ <tr><td>64</td><td>439</td><td>4390</td><td>43904</td><td>Pemasangan Kerangka Baja</td><td>Diizinkan</td></tr>
+ <tr><td>65</td><td>439</td><td>4390</td><td>43905</td><td>Penyewaan Alat Konstruksi Dengan Operator</td><td>Diizinkan</td></tr>
+ <tr><td>66</td><td>439</td><td>4390</td><td>43909</td><td>Konstruksi Khusus Lainnya Ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>&nbsp;</td><td>Perdagangan Besar Dan Eceran; Reparasi Dan Perawatan Mobil Dan Sepeda Motor</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>1</td><td>451</td><td>4510</td><td>45101</td><td>Perdagangan Besar Mobil Baru</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>2</td><td>451</td><td>4510</td><td>45102</td><td>Perdagangan Besar Mobil Bekas</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>3</td><td>451</td><td>4510</td><td>45103</td><td>Perdagangan Eceran Mobil Baru</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>4</td><td>451</td><td>4510</td><td>45104</td><td>Perdagangan Eceran Mobil Bekas</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>5</td><td>452</td><td>4520</td><td>45201</td><td>Reparasi Mobil</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>6</td><td>452</td><td>4520</td><td>45202</td><td>Pencucian Dan Salon Mobil</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>7</td><td>453</td><td>4530</td><td>45301</td><td>Perdagangan Besar Suku Cadang Dan Aksesori Mobil</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>8</td><td>453</td><td>4530</td><td>45302</td><td>Perdagangan Eceran Suku Cadang Dan Aksesori Mobil</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>9</td><td>454</td><td>4540</td><td>45401</td><td>Perdagangan Besar Sepeda Motor Baru</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>10</td><td>454</td><td>4540</td><td>45402</td><td>Perdagangan Besar Sepeda Motor Bekas</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>11</td><td>454</td><td>4540</td><td>45403</td><td>Perdagangan Eceran Sepeda Motor Baru</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>12</td><td>454</td><td>4540</td><td>45404</td><td>Perdagangan Eceran Sepeda Motor Bekas</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>13</td><td>454</td><td>4540</td><td>45405</td><td>Perdagangan Besar Suku Cadang Sepeda Motor Dan Aksesorinya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>14</td><td>454</td><td>4540</td><td>45406</td><td>Perdagangan Eceran Suku Cadang Sepeda Motor Dan Aksesorinya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>15</td><td>454</td><td>4540</td><td>45407</td><td>Reparasi Dan Perawatan Sepeda Motor</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>16</td><td>461</td><td>4610</td><td>46100</td><td>Perdagangan Besar Atas Dasar Balas Jasa (Fee) Atau Kontrak</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>17</td><td>462</td><td>4620</td><td>46201</td><td>Perdagangan Besar Padi dan Palawija</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>18</td><td>462</td><td>4620</td><td>46202</td><td>Perdagangan Besar Buah Yang Mengandung Minyak</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>19</td><td>462</td><td>4620</td><td>46203</td><td>Perdagangan Besar Bunga Dan Tanaman Hias</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>20</td><td>462</td><td>4620</td><td>46204</td><td>Perdagangan Besar Tembakau Rajangan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>21</td><td>462</td><td>4620</td><td>46205</td><td>Perdagangan Besar Binatang Hidup</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>22</td><td>462</td><td>4620</td><td>46206</td><td>Perdagangan Besar Hasil Perikanan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>23</td><td>462</td><td>4620</td><td>46207</td><td>Perdagangan Besar Hasil Kehutanan Dan Perburuan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>24</td><td>462</td><td>4620</td><td>46208</td><td>Perdagangan Besar Kulit Dan Kulit Jangat</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>25</td><td>462</td><td>4620</td><td>46209</td><td>Perdagangan Besar Hasil Pertanian Dan Hewan Hidup Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>26</td><td>463</td><td>4631</td><td>46311</td><td>Perdagangan Besar Beras</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>27</td><td>463</td><td>4631</td><td>46312</td><td>Perdagangan Besar Buah-buahan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>28</td><td>463</td><td>4631</td><td>46313</td><td>Perdagangan Besar Sayuran</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>29</td><td>463</td><td>4631</td><td>46314</td><td>Perdagangan Besar Kopi, Teh Dan Kakao</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>30</td><td>463</td><td>4631</td><td>46315</td><td>Perdagangan Besar Minyak dan Lemak Nabati</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>31</td><td>463</td><td>4631</td><td>46319</td><td>Perdagangan Besar Bahan Makanan Dan Minuman Hasil Pertanian Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>32</td><td>463</td><td>4632</td><td>46321</td><td>Perdagangan Besar Daging Sapi Dan Daging Sapi Olahan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>33</td><td>463</td><td>4632</td><td>46322</td><td>Perdagangan Besar Daging Ayam Dan Daging Ayam Olahan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>34</td><td>463</td><td>4632</td><td>46323</td><td>Perdagangan Besar Daging Dan Daging Olahan Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>35</td><td>463</td><td>4632</td><td>46324</td><td>Perdagangan Besar Hasil Olahan Perikanan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>36</td><td>463</td><td>4632</td><td>46325</td><td>Perdagangan Besar Telur Dan Hasil Olahan Telur</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>37</td><td>463</td><td>4632</td><td>46326</td><td>Perdagangan Besar Susu Dan Produk Susu</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>38</td><td>463</td><td>4632</td><td>46327</td><td>Perdagangan Besar Minyak Dan Lemak Hewani</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>39</td><td>463</td><td>4632</td><td>46329</td><td>Perdagangan Besar Bahan Makanan Dan Minuman Hasil Peternakan Dan Perikanan Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>40</td><td>463</td><td>4633</td><td>46331</td><td>Perdagangan Besar Gula, Coklat Dan Kembang Gula</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>41</td><td>463</td><td>4633</td><td>46332</td><td>Perdagangan Besar Produk Roti</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>42</td><td>463</td><td>4633</td><td>46333</td><td>Perdagangan Besar Minuman Beralkohol</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>43</td><td>463</td><td>4633</td><td>46334</td><td>Perdagangan Besar Minuman Non Alkohol Bukan Susu</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>44</td><td>463</td><td>4633</td><td>46335</td><td>Perdagangan Besar Rokok Dan Tembakau</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>45</td><td>463</td><td>4633</td><td>46339</td><td>Perdagangan Besar Makanan Dan Minuman Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>46</td><td>464</td><td>4641</td><td>46411</td><td>Perdagangan Besar Tekstil</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>47</td><td>464</td><td>4641</td><td>46412</td><td>Perdagangan Besar Pakaian</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>48</td><td>464</td><td>4641</td><td>46413</td><td>Perdagangan Besar Alas Kaki</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>49</td><td>464</td><td>4641</td><td>46414</td><td>Perdagangan Besar Barang Lainnya Dari Tekstil</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>50</td><td>464</td><td>4641</td><td>46419</td><td>Perdagangan Besar tekstil, pakaian dan alas kaki lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>51</td><td>464</td><td>4642</td><td>46421</td><td>Perdagangan Besar Alat Tulis Dan Gambar</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>52</td><td>464</td><td>4642</td><td>46422</td><td>Perdagangan Besar Barang Percetakan Dan Penerbitan Dalam Berbagai Bentuk</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>53</td><td>464</td><td>4643</td><td>46430</td><td>Perdagangan Besar Alat Fotografi dan Barang Optik</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>54</td><td>464</td><td>4644</td><td>46441</td><td>Perdagangan Besar Obat Farmasi Untuk Manusia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>55</td><td>464</td><td>4644</td><td>46442</td><td>Perdagangan Besar Obat Tradisional Untuk Manusia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>56</td><td>464</td><td>4644</td><td>46443</td><td>Perdagangan Besar Kosmetik Untuk Manusia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>57</td><td>464</td><td>4644</td><td>46444</td><td>Perdagangan Besar Obat Farmasi Untuk Hewan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>58</td><td>464</td><td>4644</td><td>46445</td><td>Perdagangan Besar Obat Tradisional Untuk Hewan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>59</td><td>464</td><td>4644</td><td>46446</td><td>Perdagangan Besar Kosmetik Untuk Hewan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>60</td><td>464</td><td>4644</td><td>46447</td><td>Perdagangan Besar Bahan Farmasi Untuk Manusia Dan Hewan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>61</td><td>464</td><td>4644</td><td>46448</td><td>Perdagangan Besar Bahan Baku Obat Tradisional Untuk Manusia Dan Hewan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>62</td><td>464</td><td>4649</td><td>46491</td><td>Perdagangan Besar Peralatan Dan Perlengkapan Rumah Tangga</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>63</td><td>464</td><td>4649</td><td>46492</td><td>Perdagangan Besar Alat Olahraga</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>64</td><td>464</td><td>4649</td><td>46493</td><td>Perdagangan Besar Alat Musik</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>65</td><td>464</td><td>4649</td><td>46494</td><td>Perdagangan Besar Perhiasan Dan Jam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>66</td><td>464</td><td>4649</td><td>46495</td><td>Perdagangan Besar Alat Permainan Dan Mainan Anak-anak</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>67</td><td>464</td><td>4649</td><td>46499</td><td>Perdagangan Besar Berbagai Barang Dan Perlengkapan Rumah Tangga Lainnya Ytdl</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>68</td><td>465</td><td>4651</td><td>46511</td><td>Perdagangan Besar Komputer dan Perlengkapan Komputer</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>69</td><td>465</td><td>4651</td><td>46512</td><td>Perdagangan Besar Piranti Lunak</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>70</td><td>465</td><td>4652</td><td>46521</td><td>Perdagangan Besar Suku Cadang Elektronik</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>71</td><td>465</td><td>4652</td><td>46522</td><td>Perdagangan Besar Disket, Flash Drive, Pita Audio dan Video, CD dan DVD Kosong</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>72</td><td>465</td><td>4652</td><td>46523</td><td>Perdagangan Besar Peralatan Telekomunikasi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>73</td><td>465</td><td>4653</td><td>46530</td><td>Perdagangan Besar Mesin, Peralatan Dan Perlengkapan Pertanian</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>74</td><td>465</td><td>4659</td><td>46591</td><td>Perdagangan Besar Mesin Kantor dan Industri Pengolahan, Suku Cadang Dan Perlengkapannya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>75</td><td>465</td><td>4659</td><td>46592</td><td>Perdagangan Besar Alat Transportasi Laut, Suku Cadang Dan Perlengkapannya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>76</td><td>465</td><td>4659</td><td>46593</td><td>Perdagangan Besar Alat Transportasi Darat (Bukan Mobil, Sepeda Motor, Dan Sejenisnya), Suku Cadang Dan Perlengkapannya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>77</td><td>465</td><td>4659</td><td>46594</td><td>Perdagangan Besar Alat Transportasi Udara, Suku Cadang Dan Perlengkapannya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>78</td><td>465</td><td>4659</td><td>46599</td><td>Perdagangan Besar Mesin, Peralatan Dan Perlengkapan Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>79</td><td>466</td><td>4661</td><td>46610</td><td>Perdagangan Besar Bahan Bakar Padat, Cair Dan Gas Dan Produk YBDI</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>80</td><td>466</td><td>4662</td><td>46620</td><td>Perdagangan Besar Logam Dan Bijih Logam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>81</td><td>466</td><td>4663</td><td>46631</td><td>Perdagangan Besar Barang Logam Untuk Bahan Konstruksi</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>82</td><td>466</td><td>4663</td><td>46632</td><td>Perdagangan Besar Kaca</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>83</td><td>466</td><td>4663</td><td>46633</td><td>Perdagangan Besar Genteng, Batu Bata, Ubin Dan Sejenisnya Dari Tanah Liat, Kapur, Semen Atau Kaca</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>84</td><td>466</td><td>4663</td><td>46634</td><td>Perdagangan Besar Semen, Kapur, Pasir Dan Batu</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>85</td><td>466</td><td>4663</td><td>46635</td><td>Perdagangan Besar Bahan Konstruksi Dari Porselen</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>86</td><td>466</td><td>4663</td><td>46636</td><td>Perdagangan Besar Bahan Konstruksi Dari Kayu</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>87</td><td>466</td><td>4663</td><td>46637</td><td>Perdagangan Besar Cat</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>88</td><td>466</td><td>4663</td><td>46638</td><td>Perdagangan Besar Berbagai Macam Material Bangunan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>89</td><td>466</td><td>4663</td><td>46639</td><td>Perdagangan Besar Bahan Konstruksi Lainnya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>90</td><td>466</td><td>4664</td><td>46641</td><td>Perdagangan Besar Mineral Bukan Logam</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>91</td><td>466</td><td>4664</td><td>46642</td><td>Perdagangan Besar Mineral Radioaktif</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>92</td><td>466</td><td>4664</td><td>46643</td><td>Perdagangan Besar Zat Radioaktif Dan Pembangkit Radiasi Pengion</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>93</td><td>466</td><td>4665</td><td>46651</td><td>Perdagangan Besar Bahan Dan Barang Kimia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>94</td><td>466</td><td>4665</td><td>46652</td><td>Perdagangan Besar Pupuk Dan Produk Agrokimia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>95</td><td>466</td><td>4665</td><td>46653</td><td>Perdagangan Besar Bahan Berbahaya (B2)</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>96</td><td>466</td><td>4665</td><td>46654</td><td>Perdagangan Besar Bahan Berbahaya Dan Beracun (B3)</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>97</td><td>466</td><td>4669</td><td>46691</td><td>Perdagangan Besar Alat Laboratorium, Alat Farmasi Dan Alat Kedokteran Untuk Manusia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>98</td><td>466</td><td>4669</td><td>46692</td><td>Perdagangan Besar Alat Laboratorium, Alat Farmasi Dan Alat Kedokteran Untuk Hewan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>99</td><td>466</td><td>4669</td><td>46693</td><td>Perdagangan Besar Karet Dan Plastik Dalam Bentuk Dasar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>100</td><td>466</td><td>4669</td><td>46694</td><td>Perdagangan Besar Kertas Dan Karton</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>101</td><td>466</td><td>4669</td><td>46695</td><td>Perdagangan Besar Barang Dari Kertas Dan Karton</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>102</td><td>466</td><td>4669</td><td>46696</td><td>Perdagangan Besar Barang Bekas Dan Sisa-sisa Tak Terpakai (Scrap)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>103</td><td>466</td><td>4669</td><td>46699</td><td>Perdagangan Besar Produk Lainnya YTDL</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>104</td><td>469</td><td>4690</td><td>46900</td><td>Perdagangan Besar Berbagai Macam Barang</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>105</td><td>471</td><td>4711</td><td>47111</td><td>Perdagangan Eceran Berbagai Macam Barang Yang Utamanya Makanan, Minuman Atau Tembakau Di Minimarket/Supermarket/Hypermarket</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>106</td><td>471</td><td>4711</td><td>47112</td><td>Perdagangan Eceran Berbagai Macam Barang Yang Utamanya Makanan, Minuman Atau Tembakau Bukan Di Minimarket/Supermarket/Hypermarket (Tradisional)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>107</td><td>471</td><td>4719</td><td>47191</td><td>Perdagangan Eceran Berbagai Macam Barang Yang Utamanya Bukan Makanan, Minuman Atau Tembakau Di Toserba (Department Store)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>108</td><td>471</td><td>4719</td><td>47192</td><td>Perdagangan Eceran Berbagai Macam Barang Yang Utamanya Bukan Makanan, Minuman Atau Tembakau (barang-barang Kelontong) Bukan Di Toserba (Department Store)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>109</td><td>472</td><td>4721</td><td>47211</td><td>Perdagangan Eceran Padi Dan Palawija</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>110</td><td>472</td><td>4721</td><td>47212</td><td>Perdagangan Eceran Buah-buahan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>111</td><td>472</td><td>4721</td><td>47213</td><td>Perdagangan Eceran Sayuran</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>112</td><td>472</td><td>4721</td><td>47214</td><td>Perdagangan Eceran Hasil Peternakan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>113</td><td>472</td><td>4721</td><td>47215</td><td>Perdagangan Eceran Hasil Perikanan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>114</td><td>472</td><td>4721</td><td>47216</td><td>Perdagangan Eceran Hasil Kehutanan dan Perburuan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>115</td><td>472</td><td>4721</td><td>47219</td><td>Perdagangan Eceran Hasil Pertanian Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>116</td><td>472</td><td>4722</td><td>47221</td><td>Perdagangan Eceran Minuman Beralkohol</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>117</td><td>472</td><td>4722</td><td>47222</td><td>Perdagangan Eceran Minuman Tidak Beralkohol</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>118</td><td>472</td><td>4723</td><td>47230</td><td>Perdagangan Ecerah Khusus Rokok dan Tembakau di Toko</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>119</td><td>472</td><td>4724</td><td>47241</td><td>Perdagangan Eceran Beras</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>120</td><td>472</td><td>4724</td><td>47242</td><td>Perdagangan Eceran Roti, Kue Kering, serta Kue Basah dan Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>121</td><td>472</td><td>4724</td><td>47243</td><td>Perdagangan Eceran Kopi, Gula Pasir dan Gula Merah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>122</td><td>472</td><td>4724</td><td>47244</td><td>Perdagangan Eceran Tahu, Tempe, Tauco dan Oncom</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>123</td><td>472</td><td>4724</td><td>47245</td><td>Perdagangan Eceran Daging dan Ikan Olahan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>124</td><td>472</td><td>4724</td><td>47249</td><td>Perdagangan Eceran Makanan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>125</td><td>473</td><td>4730</td><td>47301</td><td>Perdagangan Eceran Bahan Bakar Minyak, Bahan Bakar Gas (BBG), dan Liquefied Petroleum Gas (LPG) di Sarana Pengisian Bahan Bakar Transportasi darat, Laut, dan Udara</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>126</td><td>473</td><td>4730</td><td>47302</td><td>Perdagangan Eceran Bahan Bakar Minyak, Bahan Bakar Gas (BBG), dan Liquefied Petroleum Gas (LPG) Selain di Sarana Pengisian Bahan Bakar Transportasi darat, Laut, dan Udara</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>127</td><td>473</td><td>4730</td><td>47303</td><td>Perdagangan Eceran Minyak Pelumas Di Toko</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>128</td><td>474</td><td>4741</td><td>47411</td><td>Perdagangan Eceran Komputer Dan Perlengkapannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>129</td><td>474</td><td>4741</td><td>47412</td><td>Perdagangan Eceran Peralatan Video Game Dan Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>130</td><td>474</td><td>4741</td><td>47413</td><td>Perdagangan Eceran Piranti Lunak (Software)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>131</td><td>474</td><td>4741</td><td>47414</td><td>Perdagangan Eceran Alat Telekomunikasi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>132</td><td>474</td><td>4741</td><td>47415</td><td>Perdagangan Eceran Mesin Kantor</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>133</td><td>474</td><td>4742</td><td>47420</td><td>Perdagangan Eceran Khusus Peralatan Audio dan Vedio di Toko</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>134</td><td>475</td><td>4751</td><td>47511</td><td>Perdagangan Eceran Tekstil</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>135</td><td>475</td><td>4751</td><td>47512</td><td>Perdagangan Eceran Perlengkapan Rumah Tangga Dari Tekstil</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>136</td><td>475</td><td>4751</td><td>47513</td><td>Perdagangan Eceran Perlengkapan Jahit Menjahit</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>137</td><td>475</td><td>4752</td><td>47521</td><td>Perdagangan Eceran Barang Logam Untuk Bahan Konstruksi</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>138</td><td>475</td><td>4752</td><td>47522</td><td>Perdagangan Eceran Kaca</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>139</td><td>475</td><td>4752</td><td>47523</td><td>Perdagangan Eceran Genteng, Batu Bata, Ubin Dan Sejenisnya Dari Tanah Liat, Kapur, Semen Atau Kaca</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>140</td><td>475</td><td>4752</td><td>47524</td><td>Perdagangan Eceran Semen, Kapur, Pasir Dan Batu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>141</td><td>475</td><td>4752</td><td>47525</td><td>Perdagangan Eceran Bahan Konstruksi Dari Porselen</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>142</td><td>475</td><td>4752</td><td>47526</td><td>Perdagangan Eceran Bahan Konstruksi Dari Kayu</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>143</td><td>475</td><td>4752</td><td>47527</td><td>Perdagangan Eceran Cat, Pernis Dan Lak</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>144</td><td>475</td><td>4752</td><td>47528</td><td>Perdagangan Eceran Berbagai Macam Material Bangunan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>145</td><td>475</td><td>4752</td><td>47529</td><td>Perdagangan Eceran Bahan Dan Barang Konstruksi Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>146</td><td>475</td><td>4753</td><td>47530</td><td>Perdagangan Eceran Khusus Karpet, Permadani dan Penutup Dinding dan Lantai di Toko</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>147</td><td>475</td><td>4759</td><td>47591</td><td>Perdagangan Eceran Furnitur</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>148</td><td>475</td><td>4759</td><td>47592</td><td>Perdagangan Eceran Peralatan Listrik Rumah Tangga Dan Peralatan Penerangan Dan Perlengkapannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>149</td><td>475</td><td>4759</td><td>47593</td><td>Perdagangan Eceran Barang Pecah Belah Dan Perlengkapan Dapur Dari Plastik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>150</td><td>475</td><td>4759</td><td>47594</td><td>Perdagangan Eceran Barang Pecah Belah Dan Perlengkapan Dapur Dari Batu Atau Tanah Liat</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>151</td><td>475</td><td>4759</td><td>47595</td><td>Perdagangan Eceran Barang Pecah Belah Dan Perlengkapan Dapur Dari Kayu, Bambu Atau Rotan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>152</td><td>475</td><td>4759</td><td>47596</td><td>Perdagangan Eceran Barang Pecah Belah Dan Perlengkapan Dapur Bukan Dari Plastik, Batu, Tanah Liat, Kayu, Bumbu Atau Rotan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>153</td><td>475</td><td>4759</td><td>47597</td><td>Perdagangan Eceran Alat Musik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>154</td><td>475</td><td>4759</td><td>47599</td><td>Perdagangan Eceran Peralatan Dan Perlengkapan Rumah Tangga Lainnya YTDL</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>155</td><td>476</td><td>4761</td><td>47611</td><td>Perdagangan Eceran Alat Tulis Menulis Dan Gambar</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>156</td><td>476</td><td>4761</td><td>47612</td><td>Perdagangan Eceran Hasil Pencetakan Dan Penerbitan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>157</td><td>476</td><td>4762</td><td>47620</td><td>Perdagangan Eceran Khusus Rekaman Musik dan Video di Toko</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>158</td><td>476</td><td>4763</td><td>47630</td><td>Perdagangan Eceran Khusus Peralatan Olahraga di Toko</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>159</td><td>476</td><td>4764</td><td>47640</td><td>Perdagangan Eceran Khusus Alat Permainan dan Mainan Anak-anak di Toko</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>160</td><td>476</td><td>4765</td><td>47650</td><td>Perdagangan Eceran Kertas, Kertas Karton Dan Barang Dari Kertas Karton</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>161</td><td>477</td><td>4771</td><td>47711</td><td>Perdagangan Eceran Pakaian</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>162</td><td>477</td><td>4771</td><td>47712</td><td>Perdagangan Eceran Sepatu, Sandal Dan Alas Kaki Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>163</td><td>477</td><td>4771</td><td>47713</td><td>Perdagangan Eceran Pelengkap Pakaian</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>164</td><td>477</td><td>4771</td><td>47714</td><td>Perdagangan Eceran Tas, Dompet, Koper, Ransel Dan Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>165</td><td>477</td><td>4772</td><td>47721</td><td>Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Di Apotik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>166</td><td>477</td><td>4772</td><td>47722</td><td>Perdagangan Eceran Barang Dan Obat Farmasi Untuk Manusia Bukan Di Apotik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>167</td><td>477</td><td>4772</td><td>47723</td><td>Perdagangan Eceran Obat Tradisional Untuk Manusia</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>168</td><td>477</td><td>4772</td><td>47724</td><td>Perdagangan Eceran Kosmetik Untuk Manusia</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>169</td><td>477</td><td>4772</td><td>47725</td><td>Perdagangan Eceran Alat Laboratorium, Alat Farmasi Dan Alat Kesehatan Untuk Manusia</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>170</td><td>477</td><td>4772</td><td>47726</td><td>Perdagangan Eceran Barang Dan Obat Farmasi Untuk Hewan Di Apotik Dan Bukan Di Apotik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>171</td><td>477</td><td>4772</td><td>47727</td><td>Perdagangan Eceran Obat Tradisional Untuk Hewan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>172</td><td>477</td><td>4772</td><td>47728</td><td>Perdagangan Eceran Kosmetik Untuk Hewan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>173</td><td>477</td><td>4772</td><td>47729</td><td>Perdagangan Ecerah Khusus Barang Dan Obat Farmasi, Alat Kedokteran, Parfum Dan Kosmetik Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>174</td><td>477</td><td>4773</td><td>47731</td><td>Perdagangan Eceran Alat Fotografi Dan Perlengkapannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>175</td><td>477</td><td>4773</td><td>47732</td><td>Perdagangan Eceran Alat Optik Dan Perlengkapannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>176</td><td>477</td><td>4773</td><td>47733</td><td>Perdagangan Eceran Kaca Mata</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>177</td><td>477</td><td>4773</td><td>47734</td><td>Perdagangan Eceran Jam</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>178</td><td>477</td><td>4773</td><td>47735</td><td>Perdagangan Ecerang Barang Perhiasan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>179</td><td>477</td><td>4773</td><td>47736</td><td>Perdagangan Eceran Perlengkapan Pengendara Kendaraan Bermotor</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>180</td><td>477</td><td>4773</td><td>47737</td><td>Perdagangan Eceran Pembungkus Dari Plastik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>181</td><td>477</td><td>4773</td><td>47739</td><td>Perdagangan Eceran khusus barang baru lainnya ytdl</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>182</td><td>477</td><td>4774</td><td>47741</td><td>Perdagangan Eceran Barang Bekas Perlengkapan Rumah Tangga</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>183</td><td>477</td><td>4774</td><td>47742</td><td>Perdagangan Eceran Pakaian, Alas Kaki Dan Pelengkap Pakaian Bekas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>184</td><td>477</td><td>4774</td><td>47743</td><td>Perdagangan Eceran Barang Perlengkapan Pribadi Bekas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>185</td><td>477</td><td>4774</td><td>47744</td><td>Perdagangan Eceran Barang Listrik Dan Elektronik Bekas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>186</td><td>477</td><td>4774</td><td>47745</td><td>Perdagangan Eceran Bahan Konstruksi Dan Sanitasi Bekas</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>187</td><td>477</td><td>4774</td><td>47746</td><td>Perdagangan Eceran Barang Antik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>188</td><td>477</td><td>4774</td><td>47749</td><td>Perdagangan Eceran Barang Bekas Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>189</td><td>477</td><td>4775</td><td>47751</td><td>Perdagangan Eceran Hewan Piaraan (Pet Animals)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>190</td><td>477</td><td>4775</td><td>47752</td><td>Perdagangan Eceran Hewan Ternak</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>191</td><td>477</td><td>4775</td><td>47753</td><td>Perdaggangan Eceran Ikan Hias</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>192</td><td>477</td><td>4775</td><td>47754</td><td>Perdagangan Eceran Pakan Ternak/Unggas/Ikan dan Hewan Piaraan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>193</td><td>477</td><td>4776</td><td>47761</td><td>Perdagangan Eceran Bunga Potong/Florist</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>194</td><td>477</td><td>4776</td><td>47762</td><td>Perdagangan Eceran Tanaman Dan Bibit Tanaman</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>195</td><td>477</td><td>4776</td><td>47763</td><td>Perdagangan Eceran Pupuk Dan Pemberantas Hama</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>196</td><td>477</td><td>4776</td><td>47764</td><td>Perdagangan Eceran Perlengkapan Dan Media Tanaman Hias</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>197</td><td>477</td><td>4777</td><td>47771</td><td>Perdagangan Eceran Minyak Tanah</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>198</td><td>477</td><td>4777</td><td>47772</td><td>Perdagangan Eceran Gas Elpiji</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan SPPL</td></tr>
+ <tr><td>199</td><td>477</td><td>4777</td><td>47773</td><td>Perdagangan Eceran Bahan Kimia</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>200</td><td>477</td><td>4777</td><td>47774</td><td>Perdagangan Eceran Aromatik/Penyegar (Minyak Atsiri)</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>201</td><td>477</td><td>4777</td><td>47779</td><td>Perdagangan Eceran Bahan Kimia, dan Aromatik/Penyegar (Minyak Atsiri), Dan Bahan Bakar Bukan Bahan Bakar Untuk Kendaraan Bermotor Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan, penyusunan dokumen AMDAL/UKL/UPL</td></tr>
+ <tr><td>202</td><td>477</td><td>4778</td><td>47781</td><td>Perdagangan Eceran Barang Kerajinan Dari Kayu, Bambu, Rotan, Pandan, Rumput Dan Sejenisnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>203</td><td>477</td><td>4778</td><td>47782</td><td>Perdagangan Eceran Barang Kerajinan Dari Kulit, Tulang, Tanduk, Gading, Bulu Dan Binatan/Hewan Yang Diawetkan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>204</td><td>477</td><td>4778</td><td>47783</td><td>Perdagangan Eceran Barang Kerajinan Dari Logam</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>205</td><td>477</td><td>4778</td><td>47784</td><td>Perdagangan Eceran Barang Kerajinan Dari Keramik</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>206</td><td>477</td><td>4778</td><td>47785</td><td>Perdagangan Eceran Lukisan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>207</td><td>477</td><td>4778</td><td>47789</td><td>Perdagangan Eceran Barang Kerajinan Dan Lukisan Lainnya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>208</td><td>477</td><td>4779</td><td>47791</td><td>Perdagangan Eceran Mesin Pertanian Dan Perlengkapannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>209</td><td>477</td><td>4779</td><td>47792</td><td>Perdagangan Eceran Mesin Jahit Dan Perlengkapannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>210</td><td>477</td><td>4779</td><td>47793</td><td>Perdagangan Eceran Mesin Lainnya Dan Perlengkapannya</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>211</td><td>477</td><td>4779</td><td>47794</td><td>Perdagangan Eceran Alat Transportasi Darat Tidak Bermotor Dan Perlengkapannya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>212</td><td>477</td><td>4779</td><td>47795</td><td>Perdagangan Eceran Alat Transportasi Air Dan Perlengkapannya</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>213</td><td>477</td><td>4779</td><td>47796</td><td>Perdangan Eceran Alat-alat Pertanian</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>214</td><td>477</td><td>4779</td><td>47797</td><td>Perdagangan Eceran Alat-alat Pertukangan</td><td>pembatasan intensitas ruang (luas), pembatasan jumlah pemanfaatan</td></tr>
+ <tr><td>215</td><td>478</td><td>4781</td><td>47811</td><td>Perdagangan Eceran Kaki Lima Dan Los Pasar Komoditi Padi Dan Palawija</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>216</td><td>478</td><td>4781</td><td>47812</td><td>Perdagangan Eceran Kaki Lima Dan Los Pasar Komoditi Buah-buahan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>217</td><td>478</td><td>4781</td><td>47813</td><td>Perdagangan Eceran Kaki Lima Dan Los Pasar Komoditi Sayur-sayuran</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+ <tr><td>218</td><td>478</td><td>4781</td><td>47814</td><td>Perdagangan Eceran Kaki Lima Dan Los Pasar Komoditi Hasil Peternakan</td><td>Tidak Dizinkan/Diperbolehkan</td></tr>
+	  
+    </table>
+
+    <script src="script.js"></script>
+	    <script>
+        $(document).ready( function () {
+            $('#dataTable').DataTable();
+        } );
+    </script>
+</body>
+</html>
